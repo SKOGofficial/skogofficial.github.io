@@ -1,36 +1,45 @@
+/* Global Reset & Box Sizing */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #FB9E3A, #E6521F);
   color: #fff;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  background: #EA2F14;
 }
 
-.content h1 {
+.hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #FCEF91;
 }
 
-.content p {
+.hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
+/* Button Styles */
 button {
-  background-color: #ffcc00;
+  background-color: #FCEF91;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -41,5 +50,62 @@ button {
 }
 
 button:hover {
-  background-color: #e6b800;
+  background-color: #FB9E3A;
+  color: #fff;
+}
+
+/* Header */
+header {
+  background: #E6521F;
+  color: #fff;
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  width: 90%;
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+}
+
+main h2 {
+  color: #EA2F14;
+  border-bottom: 2px solid #FB9E3A;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project,
+.experience {
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  font-weight: bold;
+  color: #E6521F;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #888;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  background: #FB9E3A;
+  color: #fff;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
