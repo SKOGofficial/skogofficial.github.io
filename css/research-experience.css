@@ -34,15 +34,16 @@ body {
   overflow-x: hidden;
 }
 
-/* Header Styles */
+/* Header Styles - Consistent with main site */
 header {
-  background: var(--secondary-bg);
+  background: #ffffff;
   padding: 1.5rem 2rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #e9ecef;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(44, 62, 80, 0.1);
 }
 
 header img {
@@ -50,6 +51,7 @@ header img {
   height: 60px !important;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
 }
 
 header img:hover {
@@ -59,7 +61,7 @@ header img:hover {
 header h1 {
   font-size: 2rem;
   font-weight: 700;
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -67,13 +69,13 @@ header h1 {
 }
 
 header p {
-  color: var(--text-secondary);
+  color: #5a6c7d;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 header a {
-  color: var(--text-primary) !important;
+  color: #2c3e50 !important;
   text-decoration: none !important;
   font-weight: 500 !important;
   padding: 0.5rem 1rem;
@@ -83,8 +85,8 @@ header a {
 }
 
 header a:hover {
-  color: var(--accent-color) !important;
-  background: rgba(0, 255, 255, 0.1);
+  color: #2c3e50 !important;
+  background: #e3f2fd;
 }
 
 header a::after {
@@ -94,7 +96,7 @@ header a::after {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--accent-color);
+  background: #2c3e50;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
