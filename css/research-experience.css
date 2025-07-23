@@ -39,13 +39,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
-    border-bottom: 1px solid #e9ecef;
-    box-shadow: 0 2px 20px rgba(44, 62, 80, 0.1);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 20px var(--shadow-color);
 }
 
 .nav-container {
@@ -63,7 +63,7 @@ body {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: var(--text-primary);
 }
 
 .nav-logo i {
@@ -78,7 +78,7 @@ body {
 }
 
 .nav-link {
-    color: #5a6c7d;
+    color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -304,11 +304,11 @@ footer {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(10, 10, 10, 0.95);
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(44, 62, 80, 0.1);
+    box-shadow: 0 10px 27px var(--shadow-color);
     padding: 2rem 0;
   }
   
