@@ -21,7 +21,7 @@ src/
 │   └── projects.js       # Data loader for projects.json
 ├── projects.json         # All project data
 ├── project-pages.njk     # Template for individual project pages
-└── projects-index.njk    # Template for projects index page
+└── projects.html         # Static projects listing page
 ```
 
 ## Generated Pages:
@@ -50,7 +50,7 @@ src/
 
 ### Projects Index Page:
 
-- `/projects-index/` - Lists all projects organized by category
+- `/projects/` - Lists all projects organized by category
 
 ## Categories:
 

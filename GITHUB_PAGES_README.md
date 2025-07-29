@@ -101,7 +101,7 @@ src/
 
 _site/                     # Built site (excluded from git)
 ├── projects/              # Individual project pages
-├── projects-index/        # Projects listing
+├── projects/              # Projects listing
 ├── css/                   # Stylesheets
 ├── js/                    # JavaScript
 └── assets/                # Images and other assets
@@ -112,7 +112,7 @@ _site/                     # Built site (excluded from git)
 After deployment, your site will be available at:
 - **Main site**: `https://[username].github.io/[repository-name]/`
 - **Projects**: `https://[username].github.io/[repository-name]/projects/[project-name]/`
-- **Projects index**: `https://[username].github.io/[repository-name]/projects-index/`
+- **Projects index**: `https://[username].github.io/[repository-name]/projects/`
 
 For a repository named `skogofficial.github.io`, the site will be at:
 - `https://skogofficial.github.io/`

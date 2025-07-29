@@ -92,7 +92,7 @@ After fixing the issues:
 2. **Check Actions tab** for successful deployment
 3. **Visit your site** at `https://skogofficial.github.io/`
 4. **Test the new pages**:
-   - `https://skogofficial.github.io/projects-index/`
+   - `https://skogofficial.github.io/projects/`
    - `https://skogofficial.github.io/projects/street-fighter-(vthacks-2023)/`
 
 ## If Still Having Issues:
