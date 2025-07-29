@@ -8,6 +8,9 @@ yarn-error.log*
 _site/
 .cache/
 
+# GitHub Pages (will be built by GitHub Actions)
+_site/
+
 # Environment variables
 .env
 .env.local

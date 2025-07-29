@@ -99,5 +99,16 @@ Each project in the JSON file contains:
 - **`.gitignore`**: Excludes `node_modules/`, `_site/`, and other common files from version control
 - **Updated `projects.html`**: All project titles are now clickable links to their detailed pages
 - **Enhanced CSS**: Added styling for project title links with hover effects
+- **GitHub Actions**: Automated deployment to GitHub Pages (see `GITHUB_PAGES_README.md`)
+
+## Deployment
+
+The site is configured for automatic deployment to GitHub Pages:
+
+1. **Local Development**: `npm run serve` (runs on http://localhost:8080)
+2. **Production Build**: `npm run build` (creates `_site/` directory)
+3. **GitHub Pages**: Automatically deploys when you push to main/master branch
+
+See `GITHUB_PAGES_README.md` for detailed deployment instructions.
 
 The site is now ready to be deployed and provides a professional showcase for all your projects!
