@@ -1,0 +1,12 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+  resolve: values
+permalink: "projects/{{ project['project title'] | slug }}/index.html"
+layout: project.njk
+title: "{{ project['project title'] }}"
+---
+
+<!-- This template generates individual project pages --> 

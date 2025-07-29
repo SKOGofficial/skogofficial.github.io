@@ -1,0 +1,116 @@
+[
+  {
+    "project category": "Hackathon Projects",
+    "project title": "Street Fighter (VTHacks 2023)",
+    "project description": "Created a health and fitness video game with a team of 4 people that allows users to practice real boxing against AI bot.",
+    "project skills": "Game Design, Computer Vision, Python Backend and GUI, Media Pipe"
+  },
+  {
+    "project category": "Hackathon Projects",
+    "project title": "Musical Stocks (Hack Violet 2023)",
+    "project description": "Created an audio experience with a team of 4 people for day traders to understand the market through music.",
+    "project skills": "Data Visualization, Music Theory, Artificial Intelligence, Python"
+  },
+  {
+    "project category": "Hackathon Projects",
+    "project title": "Safewalk (Patriot Hacks 2024)",
+    "project description": "Created a crime-report data base for each of the NOVA campus with a team of 4 people so users can pick classes at times with least expected crimes with AI recommendations on staying safe.",
+    "project skills": "Web Scraping, Data Visualization, Artificial Intelligence Integration"
+  },
+  {
+    "project category": "Hackathon Projects",
+    "project title": "ROI bot (hoo hacks 2023)",
+    "project description": "Created a real-estate Investment Guide with a team of 4 people, to allow Real Estate Investors to see a forecast of the property value over time.",
+    "project skills": "Web Scraping, Financial Modeling"
+  },
+  {
+    "project category": "Hackathon Projects",
+    "project title": "Hokie Feast (Hackviolet 2024)",
+    "project description": "Created a Website that generates recipes for college students based on the ingredients in their fridge.",
+    "project skills": "React, JS, HTML, API integration"
+  },
+  {
+    "project category": "Hackathon Projects",
+    "project title": "Water 4 Chad (Hoohacks 2025)",
+    "project description": "An AR simulation of a river in Chad where engineers can place water cleaning dams to visualize projects in the future. The workplace can be set up in the real work enviornment through AR.",
+    "project skills": "AR, Unity, Meta-SDK, C#, API integration"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "Personal Server (Systems Fall 2024)",
+    "project description": "Web server with MP4 streaming, cookies, token-based API",
+    "project skills": "System Architecture, Networking, C"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "Threadpool (Systems Fall 2024)",
+    "project description": "Multithreaded load processing system",
+    "project skills": "Multithreading, Systems Architecture, C"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "Memory Allocator (Systems Fall 2024)",
+    "project description": "Custom malloc implementation",
+    "project skills": "C"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "Night-Island (Mixed Reality 2025)",
+    "project description": "VR night scene experience with locomotion",
+    "project skills": "Meta-SDK, Unity, C#"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "Escape-Room (Mixed Reality 2025)",
+    "project description": "VR escape game using interaction techniques",
+    "project skills": "Game Design, Meta-SDK, Unity, C#"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "AR-Basketball (Mixed Reality 2025)",
+    "project description": "AR basketball game in room-scale environments",
+    "project skills": "Meta-SDK, Unity, C#"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "AR-Golf (Mixed Reality 2025)",
+    "project description": "AR golf game with room-based physics",
+    "project skills": "Meta-SDK, Unity, C#"
+  },
+  {
+    "project category": "School Projects",
+    "project title": "MoodMuse (Apple SD 2025)",
+    "project description": "Multimodal journaling app with Spotify playlist generator",
+    "project skills": "Spotify API, Swift, Data Visualization"
+  },
+  {
+    "project category": "Personal Projects",
+    "project title": "Neural Network (Dec 2022 - Jan 2023)",
+    "project description": "Digit recognition with MNIST",
+    "project skills": "Machine Learning, Pytorch, TensorFlow, Python"
+  },
+  {
+    "project category": "Personal Projects",
+    "project title": "SignLink (Mar 2024 - Present)",
+    "project description": "Wearable sign-language translator",
+    "project skills": "Embedded Systems, AI, Computer Vision"
+  },
+  {
+    "project category": "Personal Projects",
+    "project title": "HogBack (Mar 2023 - Jan 2024)",
+    "project description": "Managed paintball games & equipment",
+    "project skills": "Maintenance, Customer Service, Communication"
+  },
+  {
+    "project category": "Personal Projects",
+    "project title": "Private Tutor (Jun 2024 - Present)",
+    "project description": "Tutored high school students in STEM & English",
+    "project skills": "Teaching, Math, Writing, Computer Science"
+  },
+  {
+    "project category": "Personal Projects",
+    "project title": "Online Furniture Sales (2020 - 2022)",
+    "project description": "Sold and marketed furniture online",
+    "project skills": "Sales, Marketing, Photography"
+  }
+] 

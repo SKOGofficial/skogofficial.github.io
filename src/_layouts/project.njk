@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+
+<div class="project-detail">
+    <div class="project-header">
+        <h1>{{ project['project title'] }}</h1>
+        <span class="project-category">{{ project['project category'] }}</span>
+    </div>
+    
+    <div class="project-content">
+        <div class="project-description">
+            <h2>Description</h2>
+            <p>{{ project['project description'] }}</p>
+        </div>
+        
+        <div class="project-skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-list">
+                {% for skill in project['project skills'].split(', ') %}
+                    <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="project-navigation">
+        <a href="/projects-index/" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to All Projects
+        </a>
+    </div>
+</div> 

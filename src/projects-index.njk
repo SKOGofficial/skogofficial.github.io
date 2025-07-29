@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: "All Projects"
+---
+
+<div class="projects-container">
+    <h1>My Projects & Experiences</h1>
+    
+    {% set categories = projects | groupBy('project category') %}
+    
+    {% for category, categoryProjects in categories %}
+    <section class="project-category">
+        <h2>{{ category }}</h2>
+        <div class="projects-grid">
+            {% for project in categoryProjects %}
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <a href="/projects/{{ project['project title'] | slug }}/">{{ project['project title'] }}</a>
+                    </h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">{{ project['project description'] }}</p>
+                    <div class="project-skills">
+                        <strong>Skills:</strong>
+                        {% for skill in project['project skills'].split(', ') %}
+                            <span class="skill-tag">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</div> 
