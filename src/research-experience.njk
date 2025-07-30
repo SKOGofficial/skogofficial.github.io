@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: Summer Research Experience
+css_file: research-experience.css
+nav_icon: microscope
+nav_title: Research Experience
+---
+
+<div class="hero">
+  <h1>Summer Research Experience</h1>
+  <p>A look into how debugging, data labeling, and automation during a research assistantship led me to consider a PhD.</p>
+</div>
+
+<section class="tldr-box">
+    <h2>TL;DR</h2>
+    <p>
+        During Summer '24, I joined a research capstone under Dr. Edward Fox and Satvik Checkuri focused on information retrieval using ETDs. I helped debug backend tools, deployed code on Linux VMs, and created an automation program that sorted 8000+ research papers in under an hour—saving months of manual labor. The experience was my first real exposure to research, and it ended up shaping my decision to pursue a PhD.
+    </p>
+</section>
+
+<h2>How It Started</h2>
+<p>
+  If I ever regret going into grad school, this is probably why. In the harsh competition of the job market, taking on a research position was the best use of my summer. So, in the early months of Summer '24, I began looking for research roles through my university connections. Out of countless emails, I got one promising lead—a pilot tester for a soon-to-launch study. Although the study was short, it introduced me to Dr. Edward Fox, who later helped me get my first real research position.
+</p>
+
+<h2>Joining the Capstone Team</h2>
+<p>
+  After the study, I was offered a volunteer assistant role in Dr. Fox's research capstone class. This capstone had a small team of seniors who were serious about research. Fueled by their upcoming graduation and years of programming experience, they were on a different level. I, on the other hand, was just looking for something to fill up my resume. The team lead was Satvik Checkuri, a PhD student working on information retrieval using a database of Electronic Thesis and Dissertations (ETDs).
+</p>
+
+<h2>Getting My Hands Dirty</h2>
+<p>
+  The team steamrolled through a massive task list managed on Slack. My first assignment was to get the Object Annotator up and running—a tool for identifying sections within ETDs. Debugging this was brutal at first. Reading someone else's codebase built on an unfamiliar framework? Total pain. But the README saved me. Once it was working locally, I had to run it on a remote VM.
+</p>
+<p>
+  Thankfully, I was decent with Linux, could troubleshoot errors, and—of course—I had ChatGPT. The key was picking the right VM node that matched the repo's dependencies so I didn't have to change much. It worked. Lesson learned: documentation matters.
+</p>
+
+<h2>From Manual Slogging to Automation Glory</h2>
+<p>
+  My next task was filtering ETDs to create a usable training set. Satvik wanted to exclude papers that were too large or off-format. So I manually sifted through 8,000+ ETDs for two weeks to find 200 clean samples.
+</p>
+
+<div class="highlight-box">
+  <h3>Automation Saves the Day</h3>
+  <p>
+    Brain-numbing work pushed me to build an automation tool. The biggest filter? Paper length. I created a script that:
+    <ul>
+      <li>Scanned local CSVs for file IDs</li>
+      <li>SSH'd into the VM to download papers</li>
+      <li>Used OCR and regex to search for required fields like department, references, etc.</li>
+    </ul>
+    It also categorized papers into <strong>acceptable</strong>, <strong>needs review</strong>, and <strong>unacceptable</strong>. What took two weeks manually now took just 45 minutes. Months of labor saved in two days of coding.
+  </p>
+</div>
+
+<h2>The Fall Follow-Up</h2>
+<p>
+  I continued with Satvik into the fall semester, doing more debugging and VM setups. This time I failed to get a repo running—the semester was heavy and I couldn't stay focused, so Satvik bailed me out. I also worked on labeling hundreds of ETD abstracts by category: Background, Objective, Method, Result, and Conclusion.
+</p>
+
+<h2>What I Took Away</h2>
+<p>
+  I started to enjoy the chaos of research. I messaged Satvik often, asking about his path and what led him to the PhD life. He kept it real—no sugarcoating. The long hours, the grind, the uncertain payoff. But also the freedom, the depth, and the satisfaction of solving hard problems.
+</p>
+<p>
+  I'm not sure where the future will take me, but this experience made one thing clear: I want to pursue a PhD. Maybe it's just a good way to not be homeless for the next five years—but hey, it's also a damn good way to learn.
+</p> 

@@ -5,7 +5,7 @@
     <title>{{ title }} - Soham Nawthale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="stylesheet" href="/css/projects.css" />
+    <link rel="stylesheet" href="/css/{{ css_file | default('projects.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-code"></i>
-                <span>Projects</span>
+                <i class="fas fa-{{ nav_icon | default('code') }}"></i>
+                <span>{{ nav_title | default('Projects') }}</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="/" class="nav-link">Home</a></li>
