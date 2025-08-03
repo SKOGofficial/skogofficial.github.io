@@ -1,6 +1,9 @@
-document.getElementById("cta-btn").addEventListener("click", function () {
-  alert("Thanks for checking me out! More features coming soon.");
-});
+const ctaBtn = document.getElementById("cta-btn");
+if (ctaBtn) {
+  ctaBtn.addEventListener("click", function () {
+    alert("Thanks for checking me out! More features coming soon.");
+  });
+}
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
