@@ -681,9 +681,15 @@ section {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 4rem;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 600px;
 }
 
 .contact-info h3 {
@@ -785,6 +791,8 @@ section {
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 1000px;
 }
 
 .roles-section h3 {
@@ -795,9 +803,10 @@ section {
 }
 
 .roles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .role-card {
@@ -807,6 +816,9 @@ section {
     border: 1px solid var(--border-color);
     text-align: center;
     transition: all 0.3s ease;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
 }
 
 .role-card:hover {
@@ -965,8 +977,18 @@ section {
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .roles-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .role-card {
+        min-width: auto;
+        max-width: 100%;
+        width: 100%;
     }
 
     .section-title {
