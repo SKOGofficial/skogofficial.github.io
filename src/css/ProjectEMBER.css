@@ -853,6 +853,14 @@ section {
     font-size: 0.95rem;
 }
 
+/* Role Card Link Styles */
+.role-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
 /* Footer */
 .footer {
     background: var(--primary-bg);
