@@ -631,6 +631,50 @@ section {
     line-height: 1.6;
 }
 
+/* Add Member Card Styles */
+.add-member {
+    border: 2px dashed var(--border-color);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.add-member:hover {
+    border-color: var(--accent-orange);
+    background: rgba(255, 107, 53, 0.05);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.add-member-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.add-member .member-avatar {
+    background: var(--gradient-primary);
+    border: 2px solid var(--accent-orange);
+    animation: pulse 2s infinite;
+}
+
+.add-member .member-avatar i {
+    font-size: 2rem;
+}
+
+.add-member h3 {
+    color: var(--accent-orange);
+}
+
+.add-member .member-role {
+    color: var(--text-secondary);
+}
+
+.add-member .member-bio {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
 /* Contact Section */
 .contact {
     background: var(--secondary-bg);
