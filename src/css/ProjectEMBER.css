@@ -363,6 +363,8 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
+    text-rendering: optimizeLegibility;
 }
 
 .stat-label {
