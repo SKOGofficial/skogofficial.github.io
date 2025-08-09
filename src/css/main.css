@@ -81,6 +81,9 @@ body {
     gap: 2rem;
 }
 
+/* Ensure links are clickable in overlay */
+.nav-menu a { position: relative; z-index: 1; }
+
 .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
@@ -405,6 +408,9 @@ footer {
     transition: 0.3s;
     box-shadow: 0 10px 27px var(--shadow-color);
     padding: 2rem 0;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    backdrop-filter: blur(6px);
   }
   
   .nav-menu.active {

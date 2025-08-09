@@ -16,14 +16,14 @@
                 <i class="fas fa-{{ nav_icon | default('code') }}"></i>
                 <span>{{ nav_title | default('Projects') }}</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="/" class="nav-link">Home</a></li>
                 <li><a href="/acedemic/" class="nav-link">Academic</a></li>
                 <li><a href="/projects/" class="nav-link">Projects</a></li>
                 <li><a href="/research-experience/" class="nav-link">Research</a></li>
                 <li><a href="/ProjectEMBER/" class="nav-link">Project Ember</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" role="button" aria-controls="primary-navigation" aria-expanded="false" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>

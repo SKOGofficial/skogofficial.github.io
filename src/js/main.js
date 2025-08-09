@@ -1,21 +1,34 @@
-document.getElementById("cta-btn").addEventListener("click", function () {
-  alert("Thanks for checking me out! More features coming soon.");
-});
+const ctaBtn = document.getElementById("cta-btn");
+if (ctaBtn) {
+  ctaBtn.addEventListener("click", function () {
+    alert("Thanks for checking me out! More features coming soon.");
+  });
+}
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+    const toggleMenu = () => {
+        const isActive = hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', String(isActive));
+    };
+
+    hamburger.addEventListener('click', toggleMenu);
+    hamburger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleMenu();
+        }
     });
 
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
     }));
 }
 
