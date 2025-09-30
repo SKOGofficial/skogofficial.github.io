@@ -11,6 +11,24 @@
   --shadow-color: var(--brand-shadow);
 }
 
+/* Brand Logo Styling */
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo-image {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 4px 8px rgba(154, 154, 154, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 /* Brand-consistent navbar styling */
 .nav-logo i {
     color: var(--brand-red);

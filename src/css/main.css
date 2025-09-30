@@ -94,6 +94,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
 }
 
+.nav-logo-image {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 2px 4px rgba(154, 154, 154, 0.3));
+}
+
 .nav-logo i {
     color: var(--brand-red);
     font-size: 1.8rem;

@@ -1,0 +1,15 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#ffffff"/>
+  
+  <!-- Clock hands -->
+  <g transform="translate(400,400)">
+    <!-- Hour hand (black) -->
+    <line x1="0" y1="0" x2="-50" y2="-80" stroke="#202020" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Minute hand (red) -->
+    <line x1="0" y1="-10" x2="60" y2="-120" stroke="#F11B0C" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="8" fill="#202020"/>
+  </g>
+</svg>
