@@ -1,22 +1,35 @@
-/* Research Experience - Modern Dark Theme with Aqua Green Accents */
+/* Research Experience - Brand Style Implementation */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Import Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* CSS Variables for consistent theming */
+/* CSS Variables for Brand Colors */
 :root {
-  --primary-bg: #0a0a0a;
-  --secondary-bg: #111111;
-  --tertiary-bg: #1a1a1a;
-  --accent-color: #00ffff;
-  --accent-hover: #00cccc;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --text-muted: #888888;
-  --border-color: #333333;
-  --shadow-color: rgba(0, 255, 255, 0.1);
-  --gradient-primary: linear-gradient(135deg, #00ffff 0%, #00cccc 100%);
-  --gradient-secondary: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  /* Primary Brand Colors */
+  --brand-dark: #202020;           /* Dark Gray/Black - borders, mini backdrops, buttons */
+  --brand-red: #F11B0C;            /* Red Accent - accent words, UI highlights */
+  
+  /* Secondary/Accent Colors */
+  --brand-white: #FFFFFF;          /* White - main background */
+  --brand-shadow: #9A9A9A;         /* Gray - shadows, depth */
+  
+  /* Neutral Colors */
+  --brand-light-gray: #C2C2C2;     /* Light Gray - secondary shadows, spacing */
+  
+  /* Legacy variables mapped to brand colors */
+  --primary-bg: var(--brand-white);
+  --secondary-bg: var(--brand-white);
+  --tertiary-bg: #f8f8f8;
+  --accent-color: var(--brand-red);
+  --accent-hover: #d91604;
+  --text-primary: var(--brand-dark);
+  --text-secondary: #505050;
+  --text-muted: #707070;
+  --border-color: var(--brand-dark);
+  --shadow-color: var(--brand-shadow);
+  --gradient-primary: linear-gradient(135deg, var(--brand-red) 0%, #d91604 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--brand-white) 0%, #f8f8f8 100%);
 }
 
 /* Reset and Base Styles */
@@ -27,11 +40,18 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--primary-bg);
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--brand-white);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* Navigation - Consistent with main site */
@@ -39,13 +59,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 2px 20px var(--shadow-color);
+    border-bottom: 2px solid var(--brand-dark);
+    box-shadow: 0 4px 12px rgba(154, 154, 154, 0.3);
 }
 
 .nav-container {

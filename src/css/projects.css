@@ -1,86 +1,89 @@
-/* Projects Page - Dark Theme with Blue-Green Gradient Accents */
+/* Projects Page - Brand Style Implementation */
 
-/* Import the main dark theme */
+/* Import the main brand styles */
 @import url('main.css');
 
-/* Override accent colors for projects page */
+/* Brand color consistency for projects page */
 :root {
-  --accent-color: #00ff88;
-  --accent-hover: #00cc6a;
-  --gradient-primary: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
-  --shadow-color: rgba(0, 255, 136, 0.1);
+  --accent-color: var(--brand-red);
+  --accent-hover: #d91604;
+  --gradient-primary: linear-gradient(135deg, var(--brand-red) 0%, #d91604 100%);
+  --shadow-color: var(--brand-shadow);
 }
 
-/* Update navbar accent */
+/* Brand-consistent navbar styling */
 .nav-logo i {
-    color: var(--accent-color);
+    color: var(--brand-red);
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+    color: var(--brand-red);
 }
 
 .nav-link::after {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
 .hamburger .bar {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
-/* Update hero section */
+/* Brand-consistent hero section */
 .hero::before {
-    background: radial-gradient(circle at 30% 20%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(194, 194, 194, 0.1) 0%, transparent 50%);
 }
 
 .btn-primary {
-    background: var(--accent-color);
+    background: var(--brand-red);
+    border-color: var(--brand-red);
 }
 
 .btn-primary:hover {
-    background: var(--accent-hover);
+    background: #d91604;
 }
 
 .btn-secondary {
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: var(--brand-dark);
+    border: 2px solid var(--brand-dark);
+    background: var(--brand-white);
 }
 
 .btn-secondary:hover {
-    background: var(--accent-color);
+    background: var(--brand-dark);
+    color: var(--brand-white);
 }
 
 .scroll-arrow {
-    border-top: 12px solid var(--accent-color);
+    border-top: 12px solid var(--brand-red);
 }
 
-/* Update section headers */
+/* Brand-consistent section headers */
 h2::before {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
-/* Update project/experience cards */
+/* Brand-consistent project/experience cards */
 .project::before, .experience::before {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
 .project:hover, .experience:hover {
-    border-color: var(--accent-color);
+    border-color: var(--brand-red);
 }
 
-/* Update scrollbar */
+/* Brand-consistent scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-hover);
+    background: #d91604;
 }
 
-/* Selection styles */
+/* Selection styles with brand colors */
 ::selection {
-    background: var(--accent-color);
-    color: var(--primary-bg);
+    background: var(--brand-red);
+    color: var(--brand-white);
 }
 
 /* New styles for project detail pages */
@@ -94,9 +97,9 @@ h2::before {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem;
-    background: rgba(0, 255, 136, 0.05);
-    border-radius: 15px;
-    border: 1px solid rgba(0, 255, 136, 0.2);
+    background: rgba(194, 194, 194, 0.1);
+    border-radius: 16px;
+    border: 2px solid var(--brand-light-gray);
 }
 
 .project-header h1 {

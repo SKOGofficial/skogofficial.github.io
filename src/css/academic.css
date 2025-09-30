@@ -1,53 +1,56 @@
-/* Academic Page - Dark Theme with Yellow-Orange Gradient Accents */
+/* Academic Page - Brand Style Implementation */
 
-/* Import the main dark theme */
+/* Import the main brand styles */
 @import url('main.css');
 
-/* Override accent colors for academic page */
+/* Brand color consistency for academic page */
 :root {
-  --accent-color: #ffa500;
-  --accent-hover: #ff8c00;
-  --gradient-primary: linear-gradient(135deg, #ffa500 0%, #ffd700 100%);
-  --shadow-color: rgba(255, 165, 0, 0.1);
+  --accent-color: var(--brand-red);
+  --accent-hover: #d91604;
+  --gradient-primary: linear-gradient(135deg, var(--brand-red) 0%, #d91604 100%);
+  --shadow-color: var(--brand-shadow);
 }
 
-/* Update navbar accent */
+/* Brand-consistent navbar styling */
 .nav-logo i {
-    color: var(--accent-color);
+    color: var(--brand-red);
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+    color: var(--brand-red);
 }
 
 .nav-link::after {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
 .hamburger .bar {
-    background: var(--accent-color);
+    background: var(--brand-red);
 }
 
-/* Update hero section */
+/* Brand-consistent hero section */
 .hero::before {
-    background: radial-gradient(circle at 30% 20%, rgba(255, 165, 0, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(194, 194, 194, 0.1) 0%, transparent 50%);
 }
 
 .btn-primary {
-    background: var(--accent-color);
+    background: var(--brand-red);
+    border-color: var(--brand-red);
 }
 
 .btn-primary:hover {
-    background: var(--accent-hover);
+    background: #d91604;
 }
 
 .btn-secondary {
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: var(--brand-dark);
+    border: 2px solid var(--brand-dark);
+    background: var(--brand-white);
 }
 
 .btn-secondary:hover {
-    background: var(--accent-color);
+    background: var(--brand-dark);
+    color: var(--brand-white);
 }
 
 .scroll-arrow {
