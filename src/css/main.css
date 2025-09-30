@@ -95,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo-image {
-    width: 32px;
-    height: 32px;
+    width: clamp(24px, 4vw, 32px);
+    height: clamp(24px, 4vw, 32px);
     filter: drop-shadow(0 2px 4px rgba(154, 154, 154, 0.3));
 }
 
