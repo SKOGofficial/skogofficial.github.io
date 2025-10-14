@@ -1,0 +1,28 @@
+---
+alwaysApply: false
+---
+
+layout:
+background: "#FFFFFF"
+borders: "1px solid #202020"
+shadow: "0 2px 6px #C2C2C2"
+spacing:
+section-margin: "2rem 0"
+paragraph-spacing: "1rem"
+blocks: - type: "headline-section"
+border: true
+background: "#FFFFFF" - type: "text-block"
+divider: "#9A9A9A" - type: "highlight-term"
+color: "#F11B0C"
+layout:
+background: "#FFFFFF"
+borders: "1px solid #202020"
+shadow: "0 2px 6px #C2C2C2"
+spacing:
+section-margin: "2rem 0"
+paragraph-spacing: "1rem"
+blocks: - type: "headline-section"
+border: true
+background: "#FFFFFF" - type: "text-block"
+divider: "#9A9A9A" - type: "highlight-term"
+color: "#F11B0C"

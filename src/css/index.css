@@ -1,4 +1,4 @@
-/* Homepage - Brand Style Implementation */
+/* Homepage - Newsletter Style Implementation */
 
 /* Import the main brand styles */
 @import url('main.css');
@@ -11,46 +11,121 @@
   --shadow-color: var(--brand-shadow);
 }
 
-/* Brand Logo Styling */
-.brand-logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+/* Newsletter Header Styling */
+.newsletter-header {
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+    margin-top: 80px;
+    background: var(--brand-white);
+    border-bottom: 3px solid var(--brand-dark);
+    box-shadow: 0 4px 12px rgba(154, 154, 154, 0.2);
 }
 
-.logo-image {
-    width: clamp(80px, 15vw, 150px);
-    height: clamp(80px, 15vw, 150px);
-    filter: drop-shadow(0 4px 8px rgba(154, 154, 154, 0.3));
+.newsletter-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--brand-red);
+    box-shadow: 0 8px 20px rgba(154, 154, 154, 0.3);
     transition: transform 0.3s ease;
 }
 
-.logo-image:hover {
+.profile-image:hover {
     transform: scale(1.05);
 }
 
-/* Brand-consistent navbar styling */
-.nav-logo i {
+.newsletter-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.newsletter-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     color: var(--brand-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-.nav-link:hover {
+/* Newsletter Content */
+.newsletter-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    background: var(--brand-white);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(154, 154, 154, 0.2);
+    border: 2px solid var(--brand-light-gray);
+}
+
+.newsletter-section {
+    margin-bottom: 3rem;
+}
+
+.newsletter-section:last-child {
+    margin-bottom: 0;
+}
+
+.newsletter-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    position: relative;
+    padding-left: 1rem;
+}
+
+.newsletter-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 1.5rem;
+    background: var(--brand-red);
+    border-radius: 2px;
+}
+
+.newsletter-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.newsletter-link {
     color: var(--brand-red);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
-.nav-link::after {
-    background: var(--brand-red);
+.newsletter-link:hover {
+    border-bottom-color: var(--brand-red);
 }
 
-.hamburger .bar {
-    background: var(--brand-red);
+.newsletter-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
-/* Brand-consistent hero section */
-.hero::before {
-    background: linear-gradient(135deg, rgba(194, 194, 194, 0.1) 0%, transparent 50%);
-}
-
+/* Button Styling */
 .btn-primary {
     background: var(--brand-red);
     border-color: var(--brand-red);
@@ -71,22 +146,29 @@
     color: var(--brand-white);
 }
 
-.scroll-arrow {
-    border-top: 12px solid var(--brand-red);
+/* Gradient Text */
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* Brand-consistent section headers */
-h2::before {
+/* Brand-consistent navbar styling */
+.nav-logo i {
+    color: var(--brand-red);
+}
+
+.nav-link:hover {
+    color: var(--brand-red);
+}
+
+.nav-link::after {
     background: var(--brand-red);
 }
 
-/* Brand-consistent project/experience cards */
-.project::before, .experience::before {
+.hamburger .bar {
     background: var(--brand-red);
-}
-
-.project:hover, .experience:hover {
-    border-color: var(--brand-red);
 }
 
 /* Brand-consistent scrollbar */
@@ -102,4 +184,60 @@ h2::before {
 ::selection {
     background: var(--brand-red);
     color: var(--brand-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newsletter-header {
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .newsletter-title {
+        font-size: 2rem;
+    }
+    
+    .newsletter-date {
+        font-size: 1rem;
+    }
+    
+    .newsletter-content {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .newsletter-section p {
+        font-size: 1rem;
+    }
+    
+    .newsletter-buttons {
+        flex-direction: column;
+    }
+    
+    .newsletter-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-title {
+        font-size: 1.75rem;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 1.35rem;
+    }
+    
+    .newsletter-content {
+        padding: 1.5rem 1rem;
+    }
 } 

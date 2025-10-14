@@ -1,0 +1,70 @@
+---
+alwaysApply: false
+---
+
+fonts:
+headlines:
+font-family: Orbitron
+font-weight: bold
+text-transform: uppercase
+color: "#F11B0C"
+background: "#FFFFFF"
+border: "1px solid #202020"
+
+subheadings:
+font-family: Orbitron, Roboto
+font-weight: bold
+text-transform: none
+color: "#202020"
+decoration: - type: underline
+color: "#F11B0C"
+style: solid
+thickness: 2px
+
+body:
+font-family: Roboto
+font-weight: normal
+color: "#1A1A1A"
+line-height: 1.6
+spacing: modular
+divider:
+color: "#9A9A9A"
+
+emphasis:
+font-family: Roboto
+font-weight: bold
+text-transform: uppercase
+color: "#F11B0C"
+fonts:
+headlines:
+font-family: Orbitron
+font-weight: bold
+text-transform: uppercase
+color: "#F11B0C"
+background: "#FFFFFF"
+border: "1px solid #202020"
+
+subheadings:
+font-family: Orbitron, Roboto
+font-weight: bold
+text-transform: none
+color: "#202020"
+decoration: - type: underline
+color: "#F11B0C"
+style: solid
+thickness: 2px
+
+body:
+font-family: Roboto
+font-weight: normal
+color: "#1A1A1A"
+line-height: 1.6
+spacing: modular
+divider:
+color: "#9A9A9A"
+
+emphasis:
+font-family: Roboto
+font-weight: bold
+text-transform: uppercase
+color: "#F11B0C"

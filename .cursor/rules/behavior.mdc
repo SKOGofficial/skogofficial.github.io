@@ -1,0 +1,10 @@
+---
+alwaysApply: false
+---
+
+behavior:
+
+- "Never use Orbitron for body text. It’s for drama, not readability."
+- "Use Roboto Regular for any paragraph longer than two lines."
+- "If you think something needs _another color_, it probably doesn’t."
+- "Whitespace is design, not wasted space. Use it."

@@ -1,0 +1,18 @@
+---
+alwaysApply: false
+---
+
+colors:
+primary: "#F11B0C"
+secondary: "#202020"
+body: "#1A1A1A"
+shadow: "#9A9A9A"
+shadow-light: "#C2C2C2"
+background: "#FFFFFF"
+
+usage:
+
+- Red (#F11B0C): Titles, emphasis, underlines
+- Dark Gray (#202020): Subheadings, dividers, borders
+- Body Gray (#1A1A1A): Paragraph text
+- Shadow Grays (#9A9A9A / #C2C2C2): Depth and spacing definition

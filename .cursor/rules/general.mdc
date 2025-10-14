@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+---
+
+rules:
+
+- name: "Consistent Typography and Color Hierarchy"
+  description: |
+  Use only the specified fonts and color palette. Avoid introducing rogue colors or mismatched font weights.
+  apply_to:
+  - layouts/\*_/_.njk
+  - includes/\*_/_.njk
+  - assets/css/\*_/_.css
+    enforce:
+    fonts: - Orbitron - Roboto
+    colors: - "#F11B0C" # Red - Primary accent - "#202020" # Dark Gray - Secondary / text - "#1A1A1A" # Black/Dark Gray - Body text - "#9A9A9A" # Shadow Gray - Divider / subtle shadows - "#C2C2C2" # Light Gray - Background shadows - "#FFFFFF" # White - Background
