@@ -3,54 +3,89 @@ layout: base.njk
 title: Home
 css_file: index.css
 nav_icon: home
-nav_title: Soham Nawthale
+nav_title: Rubber Duck
 ---
 
-<!-- Newsletter Header -->
-<div class="newsletter-header">
-    <div class="newsletter-profile">
-        <img src="/assets/images/header.jpg" alt="Soham Nawthale" class="profile-image"/>
-    </div>
-    <h1 class="newsletter-title">
-        <span class="gradient-text">The Soham Nawthale Newsletter</span>
-    </h1>
-    <p class="newsletter-date">October 2025 Edition</p>
+<!-- Masthead / Duck Logo -->
+<div class="masthead">
+    <a href="/" class="duck-logo-link">
+        <img src="/assets/images/rubber-duck-logo.svg" alt="Rubber Duck" class="duck-logo"/>
+    </a>
+    <div class="tagline">PUSHED TO MAIN</div>
 </div>
 
-<!-- Newsletter Content -->
-<article class="newsletter-content">
-    <section class="newsletter-section">
-        <h2>Hello from the Code Trenches!</h2>
-        <p>
-            Welcome to my corner of the internet! When I'm not debugging code at 3 AM (which happens more often than I'd like to admit), I'm building sustainable tech solutions that don't just work—they work responsibly. With a background spanning full-stack development, machine learning, and systems architecture, I believe the best code is like a good smoothie: efficient, clean, and doesn't leave a mess behind.
-        </p>
-    </section>
+<!-- Subject Line / Hook -->
+<div class="homepage-subject">
+    <span class="subject-label">LATEST:</span>
+    <span class="subject-text">merge_conflict, NEED REVIEW</span>
+</div>
 
-    <section class="newsletter-section">
-        <h2>What I'm Working On</h2>
-        <p>
-            I write code that's cleaner than my diet (which is saying something—I actually enjoy kale chips). From React frontends to Python backends, I craft digital experiences while keeping one eye on performance metrics and the other on carbon footprints. My technical toolkit includes everything from neural networks to memory allocators, because why choose between AI and low-level systems when you can have both?
-        </p>
-        <p>
-            Currently plotting my next move toward graduate school to dive deeper into the intersection of technology and environmental impact. Want to see what I've been building? Check out my <a href="/projects/" class="newsletter-link">projects</a> and <a href="/research-experience/" class="newsletter-link">research</a>.
-        </p>
-    </section>
+<!-- Headline / Top Story -->
+<div class="homepage-headline">
+    <h1><span class="gradient-text">Welcome to Rubber Duck</span></h1>
+    <p class="headline-hook">Your weekly dose of code, coffee, and chaos</p>
+</div>
 
-    <section class="newsletter-section">
-        <h2>My Philosophy</h2>
+<!-- Intro / Pathos Section -->
+<article class="homepage-intro">
+    <div class="intro-content">
+        <h2>WHAT IS THIS?</h2>
         <p>
-            Code should be like renewable energy: efficient, sustainable, and not a burden on future generations. I'm passionate about building technology that doesn't just solve today's problems but does so in a way that doesn't create tomorrow's environmental headaches. Whether it's optimizing algorithms or optimizing my morning smoothie recipe, I believe in thoughtful engineering—and yes, I definitely overthink both.
+            This newsletter covers my experience as a programmer, student, researcher, and entrepreneur.
         </p>
-    </section>
+        <p>
+            Get weekly updates on where my projects are going and join a growing, tight-knit community of nerds on the rise.
+        </p>
+        <p>
+            I'll cover everything from how I got started and how I keep my train running. Follow along and try to keep up!
+        </p>
+    </div>
+    
+    <!-- Featured Image -->
+    <div class="featured-image-wrapper">
+        <img src="/assets/images/header.jpg" alt="Featured" class="featured-image"/>
+    </div>
+</article>
 
-    <section class="newsletter-section">
-        <h2>Let's Connect</h2>
-        <p>
-            Interested in collaborating, chatting about tech and sustainability, or just want to share your favorite smoothie recipe? Feel free to explore my work and reach out. I'm always excited to connect with fellow developers, researchers, and anyone passionate about using technology for good.
-        </p>
-        <div class="newsletter-buttons">
-            <a href="/projects/" class="btn btn-primary">View My Projects</a>
-            <a href="/research-experience/" class="btn btn-secondary">See My Research</a>
+<!-- Latest Newsletter Issues -->
+<section class="newsletter-archive">
+    <h2>RECENT ISSUES</h2>
+    <div class="issues-grid">
+        {%- for post in collections.newsletter | limit(3) -%}
+        <article class="issue-card">
+            <div class="issue-number">Issue #{{ loop.index }}</div>
+            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <p class="issue-date">{{ post.date | readableDate }}</p>
+            <p class="issue-excerpt">{{ post.data.excerpt }}</p>
+            <a href="{{ post.url }}" class="read-more">Read More →</a>
+        </article>
+        {%- endfor -%}
+        
+        <!-- Placeholder if no posts exist -->
+        {%- if collections.newsletter.length == 0 -%}
+        <article class="issue-card">
+            <div class="issue-number">Issue #1</div>
+            <h3><a href="/posts/issue-01/">First Post Coming Soon</a></h3>
+            <p class="issue-date">October 14, 2025</p>
+            <p class="issue-excerpt">The inaugural edition of Rubber Duck is on its way. Stay tuned for developer stories, project updates, and practical insights.</p>
+            <a href="/posts/issue-01/" class="read-more">Read More →</a>
+        </article>
+        {%- endif -%}
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="homepage-cta">
+    <div class="cta-content">
+        <h2>JOIN THE COMMUNITY</h2>
+        <p>Subscribe to get weekly updates delivered straight to your inbox. No spam, just code and caffeine.</p>
+        <div class="cta-buttons">
+            <a href="#subscribe" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Subscribe
+            </a>
+            <a href="#discord" class="btn btn-secondary">
+                <i class="fab fa-discord"></i> Join Discord
+            </a>
         </div>
-    </section>
-</article> 
+    </div>
+</section> 

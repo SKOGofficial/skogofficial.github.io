@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White circular background -->
+  <circle cx="100" cy="100" r="95" fill="#FFFFFF" stroke="#202020" stroke-width="3"/>
+  
+  <!-- Rubber Duck -->
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="45" ry="40" fill="#FFD700"/>
+  
+  <!-- Head -->
+  <circle cx="95" cy="80" r="30" fill="#FFD700"/>
+  
+  <!-- Eye -->
+  <circle cx="105" cy="75" r="5" fill="#202020"/>
+  
+  <!-- Beak -->
+  <ellipse cx="120" cy="82" rx="12" ry="8" fill="#F11B0C"/>
+  
+  <!-- Wing -->
+  <path d="M 130 115 Q 145 120 135 130" stroke="#FFA500" stroke-width="3" fill="none"/>
+  
+  <!-- Tail -->
+  <path d="M 60 125 Q 50 125 55 115" fill="#FFD700"/>
+  
+  <!-- Shine/highlight on head -->
+  <circle cx="90" cy="70" r="6" fill="#FFFFFF" opacity="0.7"/>
+  
+  <!-- Bottom curve (water line suggestion) -->
+  <path d="M 60 145 Q 100 155 140 145" stroke="#9A9A9A" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>
+

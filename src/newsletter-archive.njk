@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: Newsletter Archive
+css_file: index.css
+nav_title: Rubber Duck
+---
+
+<!-- Masthead / Duck Logo -->
+<div class="masthead">
+    <a href="/" class="duck-logo-link">
+        <img src="/assets/images/rubber-duck-logo.svg" alt="Rubber Duck" class="duck-logo"/>
+    </a>
+    <div class="tagline">PUSHED TO MAIN</div>
+</div>
+
+<!-- Archive Header -->
+<div class="homepage-headline">
+    <h1><span class="gradient-text">Newsletter Archive</span></h1>
+    <p class="headline-hook">All past issues of Rubber Duck</p>
+</div>
+
+<!-- All Newsletter Issues -->
+<section class="newsletter-archive">
+    <div class="issues-grid">
+        {%- for post in collections.newsletter -%}
+        <article class="issue-card">
+            <div class="issue-number">Issue #{{ collections.newsletter.length - loop.index0 }}</div>
+            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <p class="issue-date">{{ post.date | readableDate }}</p>
+            <p class="issue-excerpt">{{ post.data.excerpt }}</p>
+            <a href="{{ post.url }}" class="read-more">Read More →</a>
+        </article>
+        {%- endfor -%}
+        
+        <!-- Placeholder if no posts exist -->
+        {%- if collections.newsletter.length == 0 -%}
+        <article class="issue-card">
+            <div class="issue-number">Issue #1</div>
+            <h3><a href="/posts/issue-01/">First Post Coming Soon</a></h3>
+            <p class="issue-date">October 14, 2025</p>
+            <p class="issue-excerpt">The inaugural edition of Rubber Duck is on its way. Stay tuned for developer stories, project updates, and practical insights.</p>
+            <a href="/posts/issue-01/" class="read-more">Read More →</a>
+        </article>
+        {%- endif -%}
+    </div>
+</section>
+
+<!-- Back to Home -->
+<section class="homepage-cta">
+    <div class="cta-content">
+        <h2>WANT MORE?</h2>
+        <p>Subscribe to get the latest issues delivered to your inbox.</p>
+        <div class="cta-buttons">
+            <a href="/" class="btn btn-primary">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+            <a href="#subscribe" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Subscribe
+            </a>
+        </div>
+    </div>
+</section>
+

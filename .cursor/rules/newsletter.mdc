@@ -1,0 +1,102 @@
+---
+alwaysApply: true
+---
+
+project: "Rubber Duck Newsletter"
+environment: "Eleventy (11ty) Static Site"
+primary_layout: "index.njk"
+description: |
+Rubber Duck is a narrative-driven programming newsletter site blending storytelling, tech updates,
+and community building. The design is minimal, image-forward, and typographically structured
+according to the provided brand system.
+
+rules:
+
+- name: "Core Design Goals"
+  description: |
+  Maintain the following design structure and brand hierarchy: - Headlines: Orbitron, bold, all caps, red #F11B0C, white background, optional border #202020 - Subheadings: Orbitron or Roboto Bold, dark gray #202020, optional red underline - Body: Roboto Regular, dark gray #1A1A1A, max three sentences per paragraph - Emphasis: Roboto Bold, all caps, red #F11B0C - Background: white #FFFFFF, shadows/dividers in #9A9A9A or #C2C2C2 - Keep whitespace generous and image padding wide - Never use Orbitron for body text - Prioritize visual rhythm through spacing and contrast, not boxes and gradients
+
+- name: "Single Layout Architecture"
+  description: |
+  All structural HTML and logic must live within a single file: `index.njk`.
+  Avoid creating additional layout files or includes.
+  Cursor should manage sections, logic, and partials inline using Nunjucks templating.
+  This prevents fragmentation and keeps editing simple.
+
+- name: "index.njk Layout Specification"
+  description: |
+  The file should include, in this order:
+
+  1. HTML <head> section
+
+     - Title: "Rubber Duck — pushed to main"
+     - Meta description: "A newsletter on code, projects, and the chaos between commits."
+     - Load Google Fonts: Orbitron, Roboto
+     - Link favicon (rubber duck icon)
+     - Include minimal CSS styling matching the brand colors and typography above
+
+  2. <body> layout sections:
+     - Masthead:
+         * Centered circular yellow rubber duck image with white background
+         * Top-center alignment
+     - Headline / Top Story:
+         * Render quirky, mysterious headline variable (`{{ headline }}`)
+         * Use Orbitron bold red styling
+     - Intro / Pathos Description:
+         * Narrative introduction (3 short paragraphs max)
+         * Markdown-safe rendering
+     - Featured Image:
+         * Full-width responsive image with large vertical padding
+     - Narrative Body:
+         * Alternating text sections and images
+         * Interactivity placeholder for demo program embeds
+     - Footer:
+         * Publication date
+         * Author short bio and avatar
+         * CTA buttons (Subscribe, Connect with Me, Join Discord, Hire Me)
+         * No social media links
+
+- name: "Footer Call-to-Action Behavior"
+  description: |
+  Render four buttons in this exact order: 1. Subscribe — red accent, most prominent 2. Connect With Me — includes small circular profile image 3. Join Discord — styled in dark gray with hover accent 4. Hire Me — outlined button, secondary prominence
+  Buttons should appear at the bottom with generous spacing and no other distractions.
+
+- name: "Visual & UX Principles"
+  description: |
+
+  - Use modular sections with consistent padding (2rem minimum between major sections)
+  - Paragraphs limited to 3 sentences for readability
+  - All imagery centered with generous whitespace
+  - Featured image and demo embed must occupy full width
+  - The page must read like a story, not like a feed
+  - Keep text left-aligned and typography clean
+
+- name: "Functional Requirements"
+  description: |
+
+  - Compatible with Eleventy (11ty) markdown rendering for new newsletter issues
+  - Each new issue should be generated as a static HTML file following `index.njk` template logic
+  - Auto-populate metadata (date, issue title)
+  - Lazy-load all images
+  - Use semantic HTML (header, main, footer)
+  - No frameworks; only vanilla CSS and Nunjucks
+  - All new editions follow same layout flow and CTA hierarchy
+
+- name: "Ethos & Narrative Consistency"
+  description: |
+
+  - Tone: casual, witty, developer-personal
+  - Avoid corporate fluff or excessive marketing tone
+  - Focus on honesty, humor, and insight
+  - Each issue should have a headline that connects indirectly to the story for intrigue
+  - Maintain credibility through transparency and authenticity
+
+- name: "File Constraints"
+  description: |
+  Cursor must not create new layout or partial directories.
+  All newsletter logic, layout, and design belong in `index.njk`.
+  Support Markdown injection for dynamic post content, but do not reference external includes.
+
+- name: "Primary Objective for AI Agent"
+  description: |
+  When modifying or generating content, prioritize: 1. Subscriber conversion clarity (Subscribe CTA) 2. Readability and spacing 3. Brand cohesion (Orbitron + Roboto, red + gray + white) 4. Consistent tone and section order

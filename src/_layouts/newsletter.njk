@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} - Rubber Duck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/newsletter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Masthead / Duck Logo -->
+    <div class="masthead">
+        <a href="/" class="duck-logo-link">
+            <img src="/assets/images/rubber-duck-logo.svg" alt="Rubber Duck" class="duck-logo"/>
+        </a>
+        <div class="tagline">PUSHED TO MAIN</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/assets/images/clock-logo.svg" alt="Soham Nawthale" class="nav-logo-image"/>
+                <span>Soham Nawthale</span>
+            </div>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/acedemic/" class="nav-link">Academic</a></li>
+                <li><a href="/projects/" class="nav-link">Projects</a></li>
+                <li><a href="/research-experience/" class="nav-link">Research</a></li>
+                <li><a href="/ProjectEMBER/" class="nav-link">Project Ember</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-controls="primary-navigation" aria-expanded="false" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Newsletter Article -->
+    <article class="newsletter-article">
+        <!-- Subject Line -->
+        <div class="subject-line">{{ subjectLine | default("merge_conflict, NEED REVIEW") }}</div>
+        
+        <!-- Headline -->
+        <h1 class="article-headline">{{ title }}</h1>
+        
+        <!-- Publish Date & Author -->
+        <div class="article-meta">
+            <span class="publish-date">{{ date | readableDate }}</span>
+            <span class="meta-divider">•</span>
+            <span class="author">Soham Nawthale</span>
+        </div>
+        
+        <!-- Article Content -->
+        <div class="article-content">
+            {{ content | safe }}
+        </div>
+    </article>
+    
+    <!-- Footer with CTAs -->
+    <footer class="newsletter-footer">
+        <div class="footer-content">
+            <!-- Author Bio -->
+            <div class="author-bio">
+                <img src="/assets/images/header.jpg" alt="Soham Nawthale" class="author-avatar"/>
+                <div class="bio-text">
+                    <h3>About the Author</h3>
+                    <p>Developer, researcher, and entrepreneur on a mission to build sustainable tech. When not debugging at 3 AM, I'm exploring the intersection of code and coffee.</p>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="footer-ctas">
+                <a href="#subscribe" class="cta-btn cta-primary">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </a>
+                <a href="#connect" class="cta-btn cta-secondary">
+                    <i class="fas fa-user-circle"></i> Connect with me
+                </a>
+                <a href="#discord" class="cta-btn cta-secondary">
+                    <i class="fab fa-discord"></i> Join Discord
+                </a>
+                <a href="#hire" class="cta-btn cta-secondary">
+                    <i class="fas fa-briefcase"></i> Hire Me
+                </a>
+            </div>
+            
+            <!-- Footer Info -->
+            <div class="footer-info">
+                <p>&copy; 2025 Rubber Duck Newsletter by Soham Nawthale</p>
+                <p class="ethos">Honest developer reflections and practical takeaways.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
+

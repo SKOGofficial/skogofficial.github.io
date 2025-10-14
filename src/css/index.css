@@ -1,4 +1,4 @@
-/* Homepage - Newsletter Style Implementation */
+/* Rubber Duck Newsletter - Homepage Styles */
 
 /* Import the main brand styles */
 @import url('main.css');
@@ -11,118 +11,289 @@
   --shadow-color: var(--brand-shadow);
 }
 
-/* Newsletter Header Styling */
-.newsletter-header {
+/* Masthead / Duck Logo */
+.masthead {
     text-align: center;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 2rem 1rem 1rem 1rem;
     margin-top: 80px;
     background: var(--brand-white);
     border-bottom: 3px solid var(--brand-dark);
-    box-shadow: 0 4px 12px rgba(154, 154, 154, 0.2);
 }
 
-.newsletter-profile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--brand-red);
-    box-shadow: 0 8px 20px rgba(154, 154, 154, 0.3);
+.duck-logo-link {
+    display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.profile-image:hover {
+.duck-logo-link:hover {
     transform: scale(1.05);
 }
 
-.newsletter-title {
+.duck-logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(154, 154, 154, 0.3));
+}
+
+.tagline {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.newsletter-date {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
     color: var(--brand-red);
-    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
+    margin-top: 1rem;
 }
 
-/* Newsletter Content */
-.newsletter-content {
-    max-width: 800px;
+/* Homepage Subject Line */
+.homepage-subject {
+    text-align: center;
+    padding: 1.5rem;
     margin: 2rem auto;
-    padding: 3rem 2rem;
+    max-width: 600px;
     background: var(--brand-white);
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(154, 154, 154, 0.2);
-    border: 2px solid var(--brand-light-gray);
+    border: 2px solid var(--brand-dark);
+    border-radius: 8px;
 }
 
-.newsletter-section {
+.subject-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--brand-dark);
+    margin-right: 0.5rem;
+}
+
+.subject-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--brand-red);
+    text-transform: uppercase;
+}
+
+/* Homepage Headline */
+.homepage-headline {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.homepage-headline h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.headline-hook {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Homepage Intro Section */
+.homepage-intro {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.intro-content {
     margin-bottom: 3rem;
 }
 
-.newsletter-section:last-child {
-    margin-bottom: 0;
-}
-
-.newsletter-section h2 {
+.intro-content h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-    position: relative;
-    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-red);
+    background: var(--brand-white);
+    border: 2px solid var(--brand-dark);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.newsletter-section h2::before {
+.intro-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    max-width: 70ch;
+}
+
+/* Featured Image */
+.featured-image-wrapper {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid var(--brand-dark);
+    box-shadow: 0 12px 32px rgba(154, 154, 154, 0.4);
+}
+
+/* Newsletter Archive / Recent Issues */
+.newsletter-archive {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.newsletter-archive h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-red);
+    background: var(--brand-white);
+    border: 3px solid var(--brand-dark);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.issue-card {
+    background: var(--brand-white);
+    border: 2px solid var(--brand-dark);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.issue-card::before {
     content: '';
     position: absolute;
+    top: 0;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     width: 4px;
-    height: 1.5rem;
+    height: 100%;
     background: var(--brand-red);
-    border-radius: 2px;
+    border-radius: 12px 0 0 12px;
+    transition: width 0.3s ease;
 }
 
-.newsletter-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+.issue-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(154, 154, 154, 0.3);
+}
+
+.issue-card:hover::before {
+    width: 8px;
+}
+
+.issue-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-red);
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    letter-spacing: 0.05em;
 }
 
-.newsletter-link {
+.issue-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.issue-card h3 a {
+    color: var(--brand-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.issue-card h3 a:hover {
+    color: var(--brand-red);
+}
+
+.issue-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.issue-excerpt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
     color: var(--brand-red);
     text-decoration: none;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
-.newsletter-link:hover {
-    border-bottom-color: var(--brand-red);
+.read-more:hover {
+    color: #d91604;
+    letter-spacing: 0.05em;
 }
 
-.newsletter-buttons {
+/* Homepage CTA Section */
+.homepage-cta {
+    background: var(--tertiary-bg);
+    border-top: 3px solid var(--brand-dark);
+    border-bottom: 3px solid var(--brand-dark);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-red);
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
 }
 
 /* Button Styling */
@@ -188,56 +359,80 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .newsletter-header {
-        padding: 2rem 1rem 1.5rem 1rem;
+    .duck-logo {
+        width: 110px;
+        height: 110px;
     }
     
-    .profile-image {
-        width: 120px;
-        height: 120px;
+    .homepage-headline h1 {
+        font-size: 2.5rem;
     }
     
-    .newsletter-title {
+    .headline-hook {
+        font-size: 1.1rem;
+    }
+    
+    .homepage-intro {
+        padding: 1rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .intro-content p {
+        font-size: 1rem;
+    }
+    
+    .newsletter-archive h2 {
         font-size: 2rem;
     }
     
-    .newsletter-date {
-        font-size: 1rem;
+    .issues-grid {
+        grid-template-columns: 1fr;
     }
     
-    .newsletter-content {
-        padding: 2rem 1.5rem;
-        margin: 1rem;
+    .cta-content h2 {
+        font-size: 2rem;
     }
     
-    .newsletter-section h2 {
-        font-size: 1.5rem;
+    .cta-content p {
+        font-size: 1.1rem;
     }
     
-    .newsletter-section p {
-        font-size: 1rem;
-    }
-    
-    .newsletter-buttons {
+    .cta-buttons {
         flex-direction: column;
-    }
-    
-    .newsletter-buttons .btn {
-        width: 100%;
-        text-align: center;
+        align-items: stretch;
     }
 }
 
 @media (max-width: 480px) {
-    .newsletter-title {
-        font-size: 1.75rem;
+    .duck-logo {
+        width: 90px;
+        height: 90px;
     }
     
-    .newsletter-section h2 {
-        font-size: 1.35rem;
+    .tagline {
+        font-size: 0.8rem;
     }
     
-    .newsletter-content {
-        padding: 1.5rem 1rem;
+    .homepage-headline h1 {
+        font-size: 2rem;
+    }
+    
+    .headline-hook {
+        font-size: 1rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .newsletter-archive h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
     }
 } 
