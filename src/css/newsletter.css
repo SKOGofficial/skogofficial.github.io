@@ -57,7 +57,7 @@
 
 /* Newsletter Article Styling */
 .newsletter-article {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
     background: var(--brand-white);
@@ -142,11 +142,28 @@
 
 .article-content img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     border: 3px solid var(--brand-dark);
     box-shadow: 0 8px 24px rgba(154, 154, 154, 0.3);
-    margin: 3rem 0;
+    margin: 3rem auto;
+    display: block;
+}
+
+/* Ensure images in paragraphs break out to full width */
+.article-content p img {
+    max-width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+@media (max-width: 768px) {
+    .article-content p img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .article-content code {
