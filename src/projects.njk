@@ -3,11 +3,98 @@ layout: base.njk
 title: My Projects & Experiences
 css_file: projects.css
 nav_icon: code
-nav_title: Projects
 ---
 
+<div class="hero hero-compact">
+    <div class="section-head no-margin">
+        <span class="eyebrow">Portfolio</span>
+        <h1 class="hero-title small">Projects &amp; Experience</h1>
+        <p class="hero-description centered">
+            Founder work, internships, research, hackathons, and everything in between.
+        </p>
+    </div>
+</div>
+
 <section>
-    <h2>Hackathon Projects</h2>
+    <div class="section-head align-left">
+        <span class="eyebrow">Development &amp; Work</span>
+        <h2>Featured Work</h2>
+    </div>
+    <div class="featured-grid">
+        <a href="/ProjectEMBER/" class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/ember.jpg" alt="Project EMBER"> -->
+            <div class="image-placeholder"><i class="fas fa-solar-panel"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Founder &amp; Lead · Aug 2025 – May 2026</span>
+                <h3>Project EMBER</h3>
+                <p>The only student-led solar-thermal energy design team at Virginia Tech. Built a
+                    prototype converting ~60% of incident energy to useful heat, with a materials
+                    simulator and an autonomous telemetry feedback loop.</p>
+                <div class="tag-row">
+                    <span class="tag">Python</span><span class="tag">Arduino</span><span class="tag">C++</span>
+                </div>
+            </div>
+        </a>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/finnimo.jpg" alt="Finnimo"> -->
+            <div class="image-placeholder"><i class="fas fa-chart-line"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Software Engineer Intern · Dec 2025 – Jun 2026</span>
+                <h3>Finnimo</h3>
+                <p>Full-stack financial planning app — onboarding, dashboards, and account aggregation,
+                    plus a RAG-backed advice layer and an internal MCP server for agentic features.</p>
+                <div class="tag-row">
+                    <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">OpenAI</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/smart.jpg" alt="SMART"> -->
+            <div class="image-placeholder"><i class="fas fa-vr-cardboard"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">AR Software Engineer · Jan – May 2026</span>
+                <h3>SMART</h3>
+                <p>Apple Vision Pro interface for smart-home control — cut device activation from ~30s
+                    to ~10s and built an AR automation builder that sped up setup by 30%.</p>
+                <div class="tag-row">
+                    <span class="tag">Vision Pro</span><span class="tag">Unity</span><span class="tag">IoT</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/systems.jpg" alt="Systems Programming"> -->
+            <div class="image-placeholder"><i class="fas fa-terminal"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Coursework Projects</span>
+                <h3>Systems Programming</h3>
+                <p>A custom terminal, a threadpool, and a Linux web server — all written in C to
+                    understand what's actually happening underneath the abstractions.</p>
+                <div class="tag-row">
+                    <span class="tag">C</span><span class="tag">Linux</span><span class="tag">Networking</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/ir.jpg" alt="Information Retrieval"> -->
+            <div class="image-placeholder"><i class="fas fa-magnifying-glass"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Research · Jun 2024 – May 2025</span>
+                <h3>Information Retrieval</h3>
+                <p>Configured and troubleshot Linux VMs for a research lab, then built a Python
+                    automation tool that cut manual processing time from 2 months to 2 weeks.</p>
+                <div class="tag-row">
+                    <span class="tag">Python</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-head align-left">
+        <span class="eyebrow">Weekend builds</span>
+        <h2>Hackathon Projects</h2>
+    </div>
     <div class="project">
         <span class="project-title"><a href="/projects/street-fighter-(vthacks-2023)/">Street Fighter (VTHacks 2023)</a></span><br>
         <small>Created a health and fitness video game with a team of 4 people that allows users to practice real boxing against AI bot.</small><br>
@@ -38,10 +125,12 @@ nav_title: Projects
         <small>An AR simulation of a river in Chad where engineers can place water cleaning dams to visualize projects in the future. The workplace can be set up in the real work enviornment through AR. </small><br>
         <small>Skills: AR, Unity, Meta-SDK, C#, API integration</small>
     </div>
-    <!-- Add more projects as needed -->
 </section>
 <section>
-    <h2>School Projects</h2>
+    <div class="section-head align-left">
+        <span class="eyebrow">Coursework</span>
+        <h2>School Projects</h2>
+    </div>
     <div class="experience"><span class="project-title"><a href="/projects/personal-server-(systems-fall-2024)/">Personal Server (Systems Fall 2024)</a></span><br><small>Web server with MP4 streaming, cookies, token-based API<br>Skills: System Architecture, Networking, C</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/threadpool-(systems-fall-2024)/">Threadpool (Systems Fall 2024)</a></span><br><small>Multithreaded load processing system<br>Skills: Multithreading, Systems Architecture, C</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/memory-allocator-(systems-fall-2024)/">Memory Allocator (Systems Fall 2024)</a></span><br><small>Custom malloc implementation<br>Skills: C</small></div>
@@ -52,10 +141,13 @@ nav_title: Projects
     <div class="experience"><span class="project-title"><a href="/projects/moodmuse-(apple-sd-2025)/">MoodMuse (Apple SD 2025)</a></span><br><small>Multimodal journaling app with Spotify playlist generator<br>Skills: Spotify API, Swift, Data Visualization</small></div>
 </section>
 <section>
-    <h2>Personal Projects</h2>
+    <div class="section-head align-left">
+        <span class="eyebrow">On the side</span>
+        <h2>Personal Projects</h2>
+    </div>
     <div class="experience"><span class="project-title"><a href="/projects/neural-network-(dec-2022-jan-2023)/">Neural Network (Dec 2022 - Jan 2023)</a></span><br><small>Digit recognition with MNIST<br>Skills: Machine Learning, Pytorch, TensorFlow, Python</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/signlink-(mar-2024-present)/">SignLink (Mar 2024 - Present)</a></span><br><small>Wearable sign-language translator<br>Skills: Embedded Systems, AI, Computer Vision</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/hogback-(mar-2023-jan-2024)/">HogBack (Mar 2023 - Jan 2024)</a></span><br><small>Managed paintball games & equipment<br>Skills: Maintenance, Customer Service, Communication</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/private-tutor-(jun-2024-present)/">Private Tutor (Jun 2024 - Present)</a></span><br><small>Tutored high school students in STEM & English<br>Skills: Teaching, Math, Writing, Computer Science</small></div>
     <div class="experience"><span class="project-title"><a href="/projects/online-furniture-sales-(2020-2022)/">Online Furniture Sales (2020 - 2022)</a></span><br><small>Sold and marketed furniture online<br>Skills: Sales, Marketing, Photography</small></div>
-</section> 
+</section>

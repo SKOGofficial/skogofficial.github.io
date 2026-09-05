@@ -3,89 +3,184 @@ layout: base.njk
 title: Home
 css_file: index.css
 nav_icon: home
-nav_title: Rubber Duck
 ---
 
-<!-- Masthead / Duck Logo -->
-<div class="masthead">
-    <a href="/" class="duck-logo-link">
-        <img src="/assets/images/rubber-duck-logo.svg" alt="Rubber Duck" class="duck-logo"/>
-    </a>
-    <div class="tagline">PUSHED TO MAIN</div>
-</div>
-
-<!-- Subject Line / Hook -->
-<div class="homepage-subject">
-    <span class="subject-label">LATEST:</span>
-    <span class="subject-text">merge_conflict, NEED REVIEW</span>
-</div>
-
-<!-- Headline / Top Story -->
-<div class="homepage-headline">
-    <h1><span class="gradient-text">Welcome to Rubber Duck</span></h1>
-    <p class="headline-hook">Your weekly dose of code, coffee, and chaos</p>
-</div>
-
-<!-- Intro / Pathos Section -->
-<article class="homepage-intro">
-    <div class="intro-content">
-        <h2>WHAT IS THIS?</h2>
-        <p>
-            This newsletter covers my experience as a programmer, student, researcher, and entrepreneur.
-        </p>
-        <p>
-            Get weekly updates on where my projects are going and join a growing, tight-knit community of nerds on the rise.
-        </p>
-        <p>
-            I'll cover everything from how I got started and how I keep my train running. Follow along and try to keep up!
-        </p>
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <span class="eyebrow">👋 Hey, I'm Soham</span>
+            <h1 class="hero-title">Building things that live<br><span class="gradient-text">somewhere between code and hardware</span></h1>
+            <p class="hero-subtitle">CS Student · Builder · Perpetual Tinkerer</p>
+            <p class="hero-description">
+                I'm a Computer Science student at Virginia Tech (Math minor, Phi Beta Kappa) who likes
+                projects that don't stay on one side of the software/hardware line — from founding a
+                solar-thermal energy team to shipping AI features for a fintech startup. When I'm not
+                debugging something, I'm probably training for a marathon or overengineering a hackathon idea.
+            </p>
+            <div class="hero-buttons">
+                <a href="/projects/" class="btn btn-primary"><i class="fas fa-diagram-project"></i> See My Projects</a>
+                <a href="mailto:skogofficial@gmail.com" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+            </div>
+            <div class="stats-row">
+                <span class="stat-chip"><i class="fas fa-graduation-cap"></i> BS Computer Science, 2026</span>
+                <span class="stat-chip"><i class="fas fa-award"></i> Phi Beta Kappa</span>
+                <span class="stat-chip"><i class="fas fa-flask"></i> 3 Research Labs</span>
+                <span class="stat-chip"><i class="fas fa-code"></i> 6+ Hackathons</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-frame">
+                <img src="/assets/images/headshot.jpg" alt="Soham Nawthale" class="header-image"/>
+            </div>
+        </div>
     </div>
-    
-    <!-- Featured Image -->
-    <div class="featured-image-wrapper">
-        <img src="/assets/images/header.jpg" alt="Featured" class="featured-image"/>
-    </div>
-</article>
+</div>
 
-<!-- Latest Newsletter Issues -->
-<section class="newsletter-archive">
-    <h2>RECENT ISSUES</h2>
-    <div class="issues-grid">
-        {%- for post in collections.newsletter | limit(3) -%}
-        <article class="issue-card">
-            <div class="issue-number">Issue #{{ loop.index }}</div>
-            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-            <p class="issue-date">{{ post.date | readableDate }}</p>
-            <p class="issue-excerpt">{{ post.data.excerpt }}</p>
-            <a href="{{ post.url }}" class="read-more">Read More →</a>
-        </article>
-        {%- endfor -%}
-        
-        <!-- Placeholder if no posts exist -->
-        {%- if collections.newsletter.length == 0 -%}
-        <article class="issue-card">
-            <div class="issue-number">Issue #1</div>
-            <h3><a href="/posts/issue-01/">First Post Coming Soon</a></h3>
-            <p class="issue-date">October 14, 2025</p>
-            <p class="issue-excerpt">The inaugural edition of Rubber Duck is on its way. Stay tuned for developer stories, project updates, and practical insights.</p>
-            <a href="/posts/issue-01/" class="read-more">Read More →</a>
-        </article>
-        {%- endif -%}
+<!-- Fun Facts -->
+<section id="about">
+    <div class="section-head">
+        <span class="eyebrow">Get to know me</span>
+        <h2>A Few Fun Facts</h2>
+        <p>The resume-adjacent trivia that doesn't fit anywhere else.</p>
+    </div>
+    <div class="facts-grid">
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-trophy"></i></div>
+            <p><strong>VA State Champion</strong> in SkillsUSA Programming (2023) — placed 4th nationally.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-bullseye"></i></div>
+            <p>Ran <strong>HogBack</strong>, a paintball equipment business, for almost two years.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-couch"></i></div>
+            <p>Flipped furniture online in high school — before I ever wrote code professionally.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-microphone"></i></div>
+            <p>Spoke at the <strong>Sines Institute's "Uncommon Table"</strong> speaker series.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-person-running"></i></div>
+            <p>Currently training for the <strong>Richmond Marathon</strong> — 26.2 miles, first time.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-hand-fist"></i></div>
+            <p>Built an AI boxing coach at VTHacks that judges your jabs in real time.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-book-open"></i></div>
+            <p>Tutors high schoolers in STEM &amp; English on the side.</p>
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon"><i class="fas fa-users"></i></div>
+            <p>Served as <strong>SGA Senator</strong> and <strong>Desi Club President</strong> at NOVA.</p>
+        </div>
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="homepage-cta">
-    <div class="cta-content">
-        <h2>JOIN THE COMMUNITY</h2>
-        <p>Subscribe to get weekly updates delivered straight to your inbox. No spam, just code and caffeine.</p>
-        <div class="cta-buttons">
-            <a href="#subscribe" class="btn btn-primary">
-                <i class="fas fa-envelope"></i> Subscribe
-            </a>
-            <a href="#discord" class="btn btn-secondary">
-                <i class="fab fa-discord"></i> Join Discord
-            </a>
+<!-- Education -->
+<section id="education">
+    <div class="section-head">
+        <span class="eyebrow">Education</span>
+        <h2>Virginia Tech</h2>
+        <p>Blacksburg, VA — graduating May 2026</p>
+    </div>
+    <div class="edu-card">
+        <div class="edu-mark"><i class="fas fa-graduation-cap"></i></div>
+        <div>
+            <h3>B.S. Computer Science, Minor in Mathematics</h3>
+            <p class="edu-meta">Phi Beta Kappa &middot; Virginia Tech Dean's List</p>
+            <p>
+                Three research labs, a self-founded engineering team, and coursework running from
+                algorithm design through machine learning — <a href="/acedemic/">the full academic
+                history is here</a>. Before Virginia Tech, I was an SGA Senator and Desi Club President
+                at NOVA, graduating as an honors student from W.T. Woodson HS.
+            </p>
+            <ul class="edu-list">
+                <li>Algorithm Design</li>
+                <li>Machine Learning</li>
+                <li>Quantum Computing</li>
+                <li>Information Retrieval Research</li>
+                <li>Document Understanding Research</li>
+            </ul>
         </div>
     </div>
-</section> 
+</section>
+
+<!-- Featured Projects -->
+<section id="projects">
+    <div class="section-head">
+        <span class="eyebrow">Selected work</span>
+        <h2>Things I've Built</h2>
+        <p>A mix of founder work, internships, and getting my hands dirty in C.</p>
+    </div>
+    <div class="featured-grid">
+        <a href="/ProjectEMBER/" class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/ember.jpg" alt="Project EMBER"> -->
+            <div class="image-placeholder"><i class="fas fa-solar-panel"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Founder &amp; Lead · Aug 2025 – May 2026</span>
+                <h3>Project EMBER</h3>
+                <p>The only student-led solar-thermal energy design team at Virginia Tech. Built a
+                    prototype converting ~60% of incident energy to useful heat, with a materials
+                    simulator and an autonomous telemetry feedback loop.</p>
+                <div class="tag-row">
+                    <span class="tag">Python</span><span class="tag">Arduino</span><span class="tag">C++</span>
+                </div>
+            </div>
+        </a>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/finnimo.jpg" alt="Finnimo"> -->
+            <div class="image-placeholder"><i class="fas fa-chart-line"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Software Engineer Intern · Dec 2025 – Jun 2026</span>
+                <h3>Finnimo</h3>
+                <p>Full-stack financial planning app — onboarding, dashboards, and account aggregation,
+                    plus a RAG-backed advice layer and an internal MCP server for agentic features.</p>
+                <div class="tag-row">
+                    <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">OpenAI</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/smart.jpg" alt="SMART"> -->
+            <div class="image-placeholder"><i class="fas fa-vr-cardboard"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">AR Software Engineer · Jan – May 2026</span>
+                <h3>SMART</h3>
+                <p>Apple Vision Pro interface for smart-home control — cut device activation from ~30s
+                    to ~10s and built an AR automation builder that sped up setup by 30%.</p>
+                <div class="tag-row">
+                    <span class="tag">Vision Pro</span><span class="tag">Unity</span><span class="tag">IoT</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature-card">
+            <!-- Replace with a real project photo: <img src="/assets/images/systems.jpg" alt="Systems Programming"> -->
+            <div class="image-placeholder"><i class="fas fa-terminal"></i><span>Photo coming soon</span></div>
+            <div class="feature-card-body">
+                <span class="feature-eyebrow">Coursework Projects</span>
+                <h3>Systems Programming</h3>
+                <p>A custom terminal, a threadpool, and a Linux web server — all written in C to
+                    understand what's actually happening underneath the abstractions.</p>
+                <div class="tag-row">
+                    <span class="tag">C</span><span class="tag">Linux</span><span class="tag">Networking</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section>
+    <div class="cta-band">
+        <h2>Let's Build Something</h2>
+        <p>Always up for talking about solar tech, agentic AI, or whatever weird hackathon idea comes next.</p>
+        <div class="cta-buttons">
+            <a href="mailto:skogofficial@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="/projects/" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Browse All Projects</a>
+        </div>
+    </div>
+</section>
