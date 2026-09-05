@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: Explainable AI for Vision-Language Models
+css_file: research-experience.css
+nav_icon: microscope
+---
+
+<div class="hero">
+  <h1>Explainable AI for Vision-Language Models</h1>
+  <p>If a model can read a document, can we tell why it got a word wrong?</p>
+</div>
+
+<section class="tldr-box">
+    <h2>The Short Version</h2>
+    <p>
+        Alongside the OCR benchmarking work, I've been digging into explainability — trying to
+        understand what's actually happening inside a vision-language model as it processes a
+        document, rather than just measuring whether its final answer is right or wrong.
+    </p>
+</section>
+
+<h2>The Bigger Picture</h2>
+<p>
+    As models get bigger and more capable, understanding why they produce a given output gets
+    harder — and more important, especially anywhere a wrong answer has real consequences.
+    Explainable AI (XAI) is the umbrella term for techniques that try to open that black box:
+    saliency and heatmap-based attribution methods that highlight what a model "looked at," probing
+    techniques that test what information is encoded in a given layer, and mechanistic
+    interpretability, which tries to reverse-engineer what individual neurons or attention heads
+    are actually doing.
+</p>
+
+<div class="highlight-box">
+    <h3>What I'm Exploring</h3>
+    <p>Where this intersects with the OCR research:</p>
+    <ul>
+        <li>Reviewing existing mechanistic interpretability literature to see which techniques transfer to document-understanding models</li>
+        <li>Building heatmap-based visualizations of a model's attention as it moves through preprocessing, the vision tower, and the language model</li>
+        <li>Tracing where in that pipeline a model's understanding of a document starts to diverge from the ground truth</li>
+        <li>Treating this as exploratory groundwork that runs alongside the layout-analysis benchmarking work</li>
+    </ul>
+</div>
+
+<div class="project-navigation">
+    <a href="/research-experience/" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Research</a>
+</div>

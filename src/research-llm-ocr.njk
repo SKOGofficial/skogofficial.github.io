@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: LLM OCR & Layout Analysis
+css_file: research-experience.css
+nav_icon: microscope
+---
+
+<div class="hero">
+  <h1>LLM OCR &amp; Layout Analysis</h1>
+  <p>Teaching large language models to actually read a page — and figuring out how to tell if they're reading it correctly.</p>
+</div>
+
+<section class="tldr-box">
+    <h2>The Short Version</h2>
+    <p>
+        Since June 2025, I've been part of a Virginia Tech research group studying how large
+        language models read and understand scanned documents. The work centers on layout
+        analysis — figuring out where headers, paragraphs, tables, and figures actually sit on a
+        page — and on benchmarking how well different detection tools agree with each other. It's
+        led to a paper, <em>Improving LLM-Based OCR Through Document Segmentation and Semantic
+        Prompting</em>, accepted to ICTAI 2026.
+    </p>
+</section>
+
+<h2>The Bigger Picture</h2>
+<p>
+    Classic OCR read a page as a flat string of text and ignored structure. Now that documents get
+    processed by LLMs instead of rule-based pipelines, layout matters again — a model that doesn't
+    know "this is a table" will misread it. Tools like Detectron2, LayoutParser, and MinerU each
+    detect layout differently, and benchmark datasets like PRImA and DocLayNet don't always agree
+    on what "correct" layout even looks like. That disagreement is itself an open research problem,
+    not just an engineering inconvenience.
+</p>
+
+<div class="highlight-box">
+    <h3>What I'm Exploring</h3>
+    <p>The parts of the problem I actually spend time on:</p>
+    <ul>
+        <li>Building a benchmarking pipeline that puts Detectron2, MinerU, and LayoutParser on common ground</li>
+        <li>Studying why layout-detection models disagree — how much is real performance difference vs. measurement artifact</li>
+        <li>Testing how different prompting strategies affect an LLM's ability to transcribe a document accurately</li>
+        <li>Co-authoring the resulting paper alongside undergraduate researchers and a faculty advisor</li>
+    </ul>
+</div>
+
+<div class="project-navigation">
+    <a href="/research-experience/" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Research</a>
+</div>
