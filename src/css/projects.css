@@ -1,140 +1,56 @@
-/* Projects Page - Brand Style Implementation */
-
-/* Import the main brand styles */
+/* Projects page — inherits the shared design system */
 @import url('main.css');
 
-/* Brand color consistency for projects page */
-:root {
-  --accent-color: var(--brand-red);
-  --accent-hover: #d91604;
-  --gradient-primary: linear-gradient(135deg, var(--brand-red) 0%, #d91604 100%);
-  --shadow-color: var(--brand-shadow);
-}
-
-/* Brand-consistent navbar styling */
-.nav-logo i {
-    color: var(--brand-red);
-}
-
-.nav-link:hover {
-    color: var(--brand-red);
-}
-
-.nav-link::after {
-    background: var(--brand-red);
-}
-
-.hamburger .bar {
-    background: var(--brand-red);
-}
-
-/* Brand-consistent hero section */
-.hero::before {
-    background: linear-gradient(135deg, rgba(194, 194, 194, 0.1) 0%, transparent 50%);
-}
-
-.btn-primary {
-    background: var(--brand-red);
-    border-color: var(--brand-red);
-}
-
-.btn-primary:hover {
-    background: #d91604;
-}
-
-.btn-secondary {
-    color: var(--brand-dark);
-    border: 2px solid var(--brand-dark);
-    background: var(--brand-white);
-}
-
-.btn-secondary:hover {
-    background: var(--brand-dark);
-    color: var(--brand-white);
-}
-
-.scroll-arrow {
-    border-top: 12px solid var(--brand-red);
-}
-
-/* Brand-consistent section headers */
-h2::before {
-    background: var(--brand-red);
-}
-
-/* Brand-consistent project/experience cards */
-.project::before, .experience::before {
-    background: var(--brand-red);
-}
-
-.project:hover, .experience:hover {
-    border-color: var(--brand-red);
-}
-
-/* Brand-consistent scrollbar */
-::-webkit-scrollbar-thumb {
-    background: var(--brand-red);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #d91604;
-}
-
-/* Selection styles with brand colors */
-::selection {
-    background: var(--brand-red);
-    color: var(--brand-white);
-}
-
-/* New styles for project detail pages */
+/* Individual project detail pages (generated from projects.json) */
 .project-detail {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem 0 2rem;
 }
 
 .project-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     padding: 2rem;
-    background: rgba(194, 194, 194, 0.1);
-    border-radius: 16px;
-    border: 2px solid var(--brand-light-gray);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
 }
 
 .project-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: var(--ink);
 }
 
 .project-category {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--accent-color);
-    color: var(--primary-bg);
-    border-radius: 25px;
-    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
     font-weight: 600;
 }
 
 .project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .project-description h2,
 .project-skills h2 {
-    color: var(--accent-color);
+    color: var(--ink);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .project-description p {
     line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .skills-list {
@@ -145,160 +61,46 @@ h2::before {
 
 .skill-tag {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 255, 136, 0.1);
-    color: var(--accent-color);
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
+    padding: 0.4rem 0.9rem;
+    background: var(--bg-alt);
+    color: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-size: 0.88rem;
+    transition: all 0.2s ease;
 }
 
 .skill-tag:hover {
-    background: var(--accent-color);
-    color: var(--primary-bg);
-    transform: translateY(-2px);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
 .project-navigation {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
 }
 
 .back-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 1rem 2rem;
-    background: var(--accent-color);
-    color: var(--primary-bg);
+    padding: 0.85rem 1.7rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: var(--radius-pill);
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
 }
 
 .back-link:hover {
-    background: var(--accent-hover);
+    border-color: var(--accent);
+    color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-}
-
-/* Projects index page styles */
-.projects-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.projects-container h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--accent-color);
-}
-
-.project-category {
-    margin-bottom: 4rem;
-}
-
-.project-category h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--accent-color);
-    text-align: center;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--accent-color);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
-}
-
-.project-card .project-title {
-    margin-bottom: 1rem;
-}
-
-.project-card .project-title a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.project-card .project-title a:hover {
-    color: var(--accent-hover);
-}
-
-.project-card .project-description {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
-}
-
-.project-card .project-skills {
-    margin-top: 1rem;
-}
-
-.project-card .project-skills strong {
-    color: var(--accent-color);
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-/* Project title links styling */
-.project-title a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.project-title a:hover {
-    color: var(--accent-hover);
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
-}
-
-.project-title a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.project-title a:hover::after {
-    width: 100%;
+    box-shadow: var(--shadow-md);
 }
 
 /* Responsive design */
@@ -307,16 +109,12 @@ h2::before {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
+
     .project-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-    
+
     .project-detail {
-        padding: 1rem;
+        padding: 0.5rem 0 1.5rem;
     }
-} 
+}
