@@ -36,49 +36,49 @@
     "project skills": "AR, Unity, Meta-SDK, C#, API integration"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "Personal Server (Systems Fall 2024)",
     "project description": "Web server with MP4 streaming, cookies, token-based API",
     "project skills": "System Architecture, Networking, C"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "Threadpool (Systems Fall 2024)",
     "project description": "Multithreaded load processing system",
     "project skills": "Multithreading, Systems Architecture, C"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "Memory Allocator (Systems Fall 2024)",
     "project description": "Custom malloc implementation",
     "project skills": "C"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "Night-Island (Mixed Reality 2025)",
     "project description": "VR night scene experience with locomotion",
     "project skills": "Meta-SDK, Unity, C#"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "Escape-Room (Mixed Reality 2025)",
     "project description": "VR escape game using interaction techniques",
     "project skills": "Game Design, Meta-SDK, Unity, C#"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "AR-Basketball (Mixed Reality 2025)",
     "project description": "AR basketball game in room-scale environments",
     "project skills": "Meta-SDK, Unity, C#"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "AR-Golf (Mixed Reality 2025)",
     "project description": "AR golf game with room-based physics",
     "project skills": "Meta-SDK, Unity, C#"
   },
   {
-    "project category": "School Projects",
+    "project category": "Course Projects",
     "project title": "MoodMuse (Apple SD 2025)",
     "project description": "Multimodal journaling app with Spotify playlist generator",
     "project skills": "Spotify API, Swift, Data Visualization"
@@ -94,23 +94,5 @@
     "project title": "SignLink (Mar 2024 - Present)",
     "project description": "Wearable sign-language translator",
     "project skills": "Embedded Systems, AI, Computer Vision"
-  },
-  {
-    "project category": "Personal Projects",
-    "project title": "HogBack (Mar 2023 - Jan 2024)",
-    "project description": "Managed paintball games & equipment",
-    "project skills": "Maintenance, Customer Service, Communication"
-  },
-  {
-    "project category": "Personal Projects",
-    "project title": "Private Tutor (Jun 2024 - Present)",
-    "project description": "Tutored high school students in STEM & English",
-    "project skills": "Teaching, Math, Writing, Computer Science"
-  },
-  {
-    "project category": "Personal Projects",
-    "project title": "Online Furniture Sales (2020 - 2022)",
-    "project description": "Sold and marketed furniture online",
-    "project skills": "Sales, Marketing, Photography"
   }
-] 
+]

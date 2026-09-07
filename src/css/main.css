@@ -733,6 +733,138 @@ section h2 {
     flex-wrap: wrap;
 }
 
+/* Inline links inside hero/section intro copy */
+.hero-description a,
+.hero > p a,
+.section-head p a,
+.edu-card p a,
+.experience a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+  transition: border-color 0.2s ease;
+}
+
+.hero-description a:hover,
+.hero > p a:hover,
+.section-head p a:hover,
+.edu-card p a:hover,
+.experience a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Role cards — one per position held */
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.role {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.role:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-soft);
+}
+
+.role-side {
+  border-right: 1px solid var(--line-soft);
+  padding-right: 1.25rem;
+}
+
+.role-org {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.role-dates {
+  font-size: 0.82rem;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+.role-kind {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  background: var(--accent-2-soft);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+}
+
+.role-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-body p {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.role-body a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.role-body a:hover { text-decoration: underline; }
+
+/* "This lives elsewhere" pointers between Projects / Research / Experience */
+.crosslink-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.crosslink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.crosslink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.crosslink i { color: var(--accent); }
+
 /* Footer */
 footer {
   background: transparent;
@@ -889,4 +1021,18 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-dark);
+}
+
+@media (max-width: 768px) {
+  .role {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.25rem;
+  }
+  .role-side {
+    border-right: none;
+    border-bottom: 1px solid var(--line-soft);
+    padding-right: 0;
+    padding-bottom: 0.9rem;
+  }
 }
