@@ -1,0 +1,61 @@
+---
+layout: page.njk
+title: Explainability for vision-language OCR
+permalink: /research/xai/
+kicker: "Research · Virginia Tech · 2026 – present"
+lede: "If a model misreads a word on a scanned page, where in the pipeline did it go wrong?"
+description: "Soham Nawthale's current research on explainable AI for OCR and vision-language models at Virginia Tech."
+back:
+  href: /research/
+  label: All research
+---
+
+<div class="summary">
+    <p>
+        Current work. Rather than scoring a document model’s final answer, I am tracing how its reading of a page
+        changes from preprocessing through the vision tower and into the language model, and where it starts to
+        diverge from the ground truth.
+    </p>
+</div>
+
+<h2>Why</h2>
+<p>
+    As models get bigger, understanding why they produced a given output gets harder and more important,
+    especially anywhere a wrong answer has consequences. Explainable AI is the umbrella term for the techniques
+    that try to open the box: saliency and heatmap attribution that show what a model attended to, probing that
+    tests what a layer encodes, and mechanistic interpretability, which tries to reverse-engineer what individual
+    components are doing. Very little of that has been aimed at OCR, where the pipeline has an unusually clear
+    sequence of stages to trace.
+</p>
+
+<h2>What I am doing</h2>
+<ul>
+    <li>Reviewing the mechanistic interpretability literature to see which techniques transfer to document-understanding models.</li>
+    <li>Building heatmap visualizations of a model’s attention as a page moves through preprocessing, the vision tower, and the language model.</li>
+    <li>Running a set of experiments to locate where in that pipeline the model’s understanding of a document first diverges from the ground truth.</li>
+</ul>
+<p>
+    It runs alongside the <a href="/research/llm-ocr/">layout-analysis benchmarking</a> and uses the same
+    pipeline, so the two projects feed each other.
+</p>
+
+<h2>A note on estimating research</h2>
+<p>
+    The most useful lesson so far has been about planning rather than models. I had a rule of declaring the
+    intended output of each work session the night before. I kept being wrong in the same direction: halfway,
+    then ninety percent, then several more hours with plenty left, then done, then an entire layer I had been
+    ignoring. Meanwhile five days went by with none of the experiments run, because background reading has no
+    natural stopping point.
+</p>
+<p>
+    A declared output is an estimate in disguise. To say what you will find, you have to already know the shape
+    of the answer, which is exactly the thing that is unknown. Sessions now end by writing down the concrete
+    entry point for the next one, which is a record rather than a prediction, and reading days alternate with
+    implementation days so open-ended research cannot crowd out the work that produces something runnable.
+</p>
+
+<dl class="facts">
+    <dt>Role</dt><dd>Undergraduate researcher</dd>
+    <dt>Dates</dt><dd>2026 – present</dd>
+    <dt>Stack</dt><dd>Python, PyTorch, interpretability tooling</dd>
+</dl>

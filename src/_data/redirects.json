@@ -1,0 +1,8 @@
+[
+  { "from": "acedemic/", "to": "/experience/#education" },
+  { "from": "research-experience/", "to": "/research/" },
+  { "from": "research-llm-ocr/", "to": "/research/llm-ocr/" },
+  { "from": "research-xai/", "to": "/research/xai/" },
+  { "from": "research-qmist/", "to": "/research/qmist/" },
+  { "from": "newsletter-archive/", "to": "/" }
+]

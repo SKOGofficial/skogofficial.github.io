@@ -1,6 +1,0 @@
-{
-  "layout": "newsletter.njk",
-  "tags": "newsletter",
-  "permalink": "posts/{{ title | slugify }}/"
-}
-

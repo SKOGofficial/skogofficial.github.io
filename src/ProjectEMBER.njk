@@ -1,0 +1,95 @@
+---
+layout: page.njk
+title: Project EMBER
+permalink: /ProjectEMBER/
+kicker: "Virginia Tech · Aug 2025 – May 2026 · Founder and team lead"
+lede: "The only student-led solar-thermal energy design team at Virginia Tech. One academic year, from a blank page to a working panel."
+description: "Project EMBER is Virginia Tech's student-led solar-thermal design team, founded and led by Soham Nawthale. A working panel prototype, a materials simulator, and an autonomous telemetry loop."
+back:
+  href: /projects/
+  label: All projects
+---
+
+<div class="summary">
+    <p>
+        A solar thermal panel prototype that converts roughly 60% of incident energy into useful heat, and the
+        software that made it possible to build in a year: a materials simulator, on-device telemetry, and a
+        feedback loop that adjusts flow rate on its own.
+    </p>
+</div>
+
+<h2>Why it exists</h2>
+<p>
+    Virginia Tech had design teams for a lot of things, but nothing student-led working on solar-thermal energy.
+    In August 2025 I started one. There was no team, no design, and no precedent for the process, which meant
+    recruiting an interdisciplinary group, setting the technical direction, and figuring out how a student team
+    gets a thermal system built without a lab of its own.
+</p>
+<p>
+    The original design target was a non-concentrated solar thermal panel of about one kilowatt driving an
+    Organic Rankine Cycle, buildable for under five thousand dollars. The first phase was a literature review
+    covering heat transfer fluids, phase change materials, and small turbines, and it shaped everything that
+    followed.
+</p>
+
+<h2>What we built</h2>
+
+<h3>The simulator</h3>
+<p>
+    The first real decision was refusing to fabricate first. Testing coating and absorber-plate materials
+    physically would have meant building and measuring six coating-material combinations, a semester we did
+    not have. So I built a simulator to evaluate material effectiveness computationally, and we only fabricated
+    what the simulation favored. That one decision is what fit the project into a year.
+</p>
+
+<h3>The panel</h3>
+<p>
+    The team designed and built the panel itself. Under test it converted roughly 60% of incident energy into
+    useful heat, which is the number the year is measured by.
+</p>
+
+<h3>Telemetry and the feedback loop</h3>
+<p>
+    I integrated a telemetry system with on-device data logging so the panel could run long, unattended tests.
+    Then I closed the loop: rather than having someone watch the readings, the system uses live data to make
+    micro-adjustments to flow rate on its own, both to hold test conditions steady and to protect the onboard
+    electronics from thermal damage. The word that matters is <em>independently</em>. It operates without a
+    human in the loop, and that instinct carried straight into the agent work I did later at Finnimo.
+</p>
+
+<h2>How the year ran</h2>
+<ol>
+    <li><strong>Background research.</strong> What had already been tried in solar-thermal with an Organic Rankine Cycle, and what a student team could realistically build.</li>
+    <li><strong>Design and build.</strong> Requirements from the research, the simulator to narrow materials, then fabrication of the prototype.</li>
+    <li><strong>Experiments.</strong> Instrumented tests on the built panel, with the telemetry loop running the long ones.</li>
+    <li><strong>Write-up and pitch.</strong> Documenting the results and pitching the idea beyond campus.</li>
+</ol>
+
+<h2>People</h2>
+<p>
+    Founded and led by me, with an interdisciplinary team of Virginia Tech students across computer science and
+    engineering. Advised by Dr. Jiangtao Cheng, Professor at Virginia Tech, whose research spans fluid mechanics,
+    heat transfer, and sustainable energy.
+</p>
+
+<h2>Get involved</h2>
+<p>
+    The team is always interested in people who want to research heat transfer and fluids, people who want to
+    build hardware, and people who want to document the work. Reach the team at
+    <a href="mailto:projectEMBER.vt@gmail.com">projectEMBER.vt@gmail.com</a>, or apply directly.
+</p>
+<p><a class="button" href="https://forms.gle/vngV4qqKpGmUCiwN7">Apply to join EMBER</a></p>
+<p>
+    Elsewhere:
+    <a href="https://github.com/projectEMBER-vt">GitHub</a> ·
+    <a href="https://www.linkedin.com/company/project-ember-vt/">LinkedIn</a> ·
+    <a href="https://www.instagram.com/vt_ember">Instagram</a> ·
+    <a href="https://x.com/projectEMBER_vt">X</a>
+</p>
+
+<dl class="facts">
+    <dt>Role</dt><dd>Founder and team lead</dd>
+    <dt>Dates</dt><dd>August 2025 – May 2026</dd>
+    <dt>Stack</dt><dd>Python, Arduino, C++</dd>
+    <dt>Advisor</dt><dd>Dr. Jiangtao Cheng, Virginia Tech</dd>
+</dl>

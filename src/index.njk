@@ -1,191 +1,146 @@
 ---
 layout: base.njk
-title: Home
-css_file: index.css
-nav_icon: home
+permalink: /
+description: "Soham Nawthale is a software engineer out of Virginia Tech. Fintech product work, AI and computer vision research, and the founder of a student solar-thermal design team."
 ---
 
-<!-- Hero -->
-<div class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <span class="eyebrow">👋 Hey, I'm Soham</span>
-            <h1 class="hero-title">Building things that live<br><span class="gradient-text">somewhere between code and hardware</span></h1>
-            <p class="hero-subtitle">CS Student · Builder · Perpetual Tinkerer</p>
-            <p class="hero-description">
-                I'm a Computer Science student at Virginia Tech (Math minor, Phi Beta Kappa) who likes
-                projects that don't stay on one side of the software/hardware line — from founding a
-                solar-thermal energy team to shipping AI features for a fintech startup. When I'm not
-                debugging something, I'm probably training for a marathon or overengineering a hackathon idea.
-            </p>
-            <div class="hero-buttons">
-                <a href="/projects/" class="btn btn-primary"><i class="fas fa-diagram-project"></i> See My Projects</a>
-                <a href="/experience/" class="btn btn-secondary"><i class="fas fa-briefcase"></i> My Experience</a>
-            </div>
-            <div class="stats-row">
-                <span class="stat-chip"><i class="fas fa-graduation-cap"></i> BS Computer Science, 2026</span>
-                <span class="stat-chip"><i class="fas fa-award"></i> Phi Beta Kappa</span>
-                <span class="stat-chip"><i class="fas fa-flask"></i> 4 Research Groups</span>
-                <span class="stat-chip"><i class="fas fa-code"></i> 6+ Hackathons</span>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="avatar-frame">
-                <img src="/assets/images/headshot.jpg" alt="Soham Nawthale" class="header-image"/>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Fun Facts -->
-<section id="about">
-    <div class="section-head">
-        <span class="eyebrow">Get to know me</span>
-        <h2>A Few Fun Facts</h2>
-        <p>The resume-adjacent trivia that doesn't fit anywhere else.</p>
-    </div>
-    <div class="facts-grid">
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-trophy"></i></div>
-            <p><strong>VA State Champion</strong> in SkillsUSA Programming (2023) — placed 4th nationally.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-bullseye"></i></div>
-            <p>Worked at <strong>HogBack</strong> for nearly two years as a paintball referee and gun technician.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-couch"></i></div>
-            <p>Ran my own furniture-flipping business online in high school — before I ever wrote code professionally.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-microphone"></i></div>
-            <p>Spoke at the <strong>Sines Institute's "Uncommon Table"</strong> speaker series.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-person-running"></i></div>
-            <p>Currently training for the <strong>Richmond Marathon</strong> — 26.2 miles, first time.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-hand-fist"></i></div>
-            <p>Built an AI boxing coach at VTHacks that judges your jabs in real time.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-book-open"></i></div>
-            <p>Tutor high schoolers in STEM &amp; English on the side — my own little venture.</p>
-        </div>
-        <div class="fact-card">
-            <div class="fact-icon"><i class="fas fa-users"></i></div>
-            <p>Served as <strong>SGA Senator</strong> and <strong>Desi Club President</strong> at NOVA.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Education -->
-<section id="education">
-    <div class="section-head">
-        <span class="eyebrow">Education</span>
-        <h2>Virginia Tech</h2>
-        <p>Blacksburg, VA — graduating May 2026</p>
-    </div>
-    <div class="edu-card">
-        <div class="edu-mark"><i class="fas fa-graduation-cap"></i></div>
-        <div>
-            <h3>B.S. Computer Science, Minor in Mathematics</h3>
-            <p class="edu-meta">Phi Beta Kappa &middot; Virginia Tech Dean's List</p>
+<section class="intro">
+    <div>
+        <p class="kicker">Software engineer · Virginia Tech CS ’26</p>
+        <h1>I like working at the layer where software meets the physical world.</h1>
+        <div class="body-text">
             <p>
-                Four research groups, a self-founded engineering team, and coursework running from
-                algorithm design through machine learning — <a href="/acedemic/">the full academic
-                history is here</a>. Before Virginia Tech, I was an SGA Senator and Desi Club President
-                at NOVA, graduating as an honors student from W.T. Woodson HS.
+                I graduated from Virginia Tech in May 2026 with a B.S. in Computer Science and a minor in
+                Mathematics, Phi Beta Kappa. Over the last two years I shipped a financial planning product
+                end to end at a fintech startup, built an Apple Vision Pro interface for controlling a smart
+                home, co-authored a paper on how language models read scanned documents, and founded the only
+                student-led solar-thermal design team on campus.
             </p>
-            <ul class="edu-list">
-                <li>Algorithm Design</li>
-                <li>Machine Learning</li>
-                <li>Quantum Computing</li>
-                <li>Information Retrieval Research</li>
-                <li>Document Understanding Research</li>
-            </ul>
+            <p>
+                The thread through all of it is wanting to know what is happening underneath the abstraction.
+                It is why I wrote a threadpool and a web server in C, and why the solar panel ended up with a
+                telemetry loop that adjusts its own flow rate.
+            </p>
         </div>
     </div>
+    <img class="portrait" src="/assets/images/headshot.jpg" alt="Soham Nawthale" width="136" height="136">
 </section>
 
-<!-- Featured Projects -->
-<section id="projects">
+<section class="section" id="now">
     <div class="section-head">
-        <span class="eyebrow">Selected work</span>
-        <h2>What I've Been Up To</h2>
-        <p>A team I founded, an internship, an engineering role, and coursework — each card says which is which.</p>
+        <h2>Now</h2>
+        <span class="meta">Updated {{ site.updated }}</span>
     </div>
-    <div class="featured-grid">
-        <a href="/ProjectEMBER/" class="feature-card">
-            <!-- Replace with a real project photo: <img src="/assets/images/ember.jpg" alt="Project EMBER"> -->
-            <div class="image-placeholder"><i class="fas fa-solar-panel"></i><span>Photo coming soon</span></div>
-            <div class="feature-card-body">
-                <span class="feature-eyebrow">Leadership · Founder &amp; Lead · Aug 2025 – May 2026</span>
-                <h3>Project EMBER</h3>
-                <p>The only student-led solar-thermal energy design team at Virginia Tech. Built a
-                    prototype converting ~60% of incident energy to useful heat, with a materials
-                    simulator and an autonomous telemetry feedback loop.</p>
-                <div class="tag-row">
-                    <span class="tag">Python</span><span class="tag">Arduino</span><span class="tag">C++</span>
-                </div>
-            </div>
-        </a>
-        <a href="/experience/" class="feature-card">
-            <!-- Replace with a real project photo: <img src="/assets/images/finnimo.jpg" alt="Finnimo"> -->
-            <div class="image-placeholder"><i class="fas fa-chart-line"></i><span>Photo coming soon</span></div>
-            <div class="feature-card-body">
-                <span class="feature-eyebrow">Job · Software Engineer Intern · Dec 2025 – Jun 2026</span>
-                <h3>Finnimo</h3>
-                <p>Full-stack financial planning app — onboarding, dashboards, and account aggregation,
-                    plus a RAG-backed advice layer and an internal MCP server for agentic features.</p>
-                <div class="tag-row">
-                    <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">OpenAI</span>
-                </div>
-            </div>
-        </a>
-        <a href="/experience/" class="feature-card">
-            <!-- Replace with a real project photo: <img src="/assets/images/smart.jpg" alt="SMART"> -->
-            <div class="image-placeholder"><i class="fas fa-vr-cardboard"></i><span>Photo coming soon</span></div>
-            <div class="feature-card-body">
-                <span class="feature-eyebrow">Job · AR Software Engineer · Jan – May 2026</span>
-                <h3>SMART</h3>
-                <p>Apple Vision Pro interface for smart-home control — cut device activation from ~30s
-                    to ~10s and built an AR automation builder that sped up setup by 30%.</p>
-                <div class="tag-row">
-                    <span class="tag">Vision Pro</span><span class="tag">Unity</span><span class="tag">IoT</span>
-                </div>
-            </div>
-        </a>
-        <a href="/projects/" class="feature-card">
-            <!-- Replace with a real project photo: <img src="/assets/images/systems.jpg" alt="Systems Programming"> -->
-            <div class="image-placeholder"><i class="fas fa-terminal"></i><span>Photo coming soon</span></div>
-            <div class="feature-card-body">
-                <span class="feature-eyebrow">Project · Coursework</span>
-                <h3>Systems Programming</h3>
-                <p>A custom terminal, a threadpool, and a Linux web server — all written in C to
-                    understand what's actually happening underneath the abstractions.</p>
-                <div class="tag-row">
-                    <span class="tag">C</span><span class="tag">Linux</span><span class="tag">Networking</span>
-                </div>
-            </div>
-        </a>
+    <ul class="now">
+        <li>
+            <strong>Looking for a full-time software engineering role.</strong> Applied AI, infrastructure,
+            or anything with hardware in the loop is where I do my best work.
+        </li>
+        <li>
+            <strong>Doing explainability research</strong> on OCR and vision-language models at Virginia Tech,
+            tracing where in the pipeline a model’s reading of a page goes wrong.
+            <a href="/research/xai/">More on that</a>.
+        </li>
+        <li>
+            <strong>Co-author on a paper accepted to ICTAI 2026</strong> on document segmentation and semantic
+            prompting for LLM-based OCR.
+        </li>
+        <li>
+            <strong>Training for the Richmond Marathon</strong> on November 14. First one. Target is 4:30.
+        </li>
+    </ul>
+</section>
+
+<section class="section" id="work">
+    <div class="section-head">
+        <h2>Selected work</h2>
+        <a class="more" href="/projects/">All projects &rarr;</a>
     </div>
-    <div class="crosslink-row" style="justify-content:center;">
-        <a href="/projects/" class="crosslink"><i class="fas fa-code"></i> All projects</a>
-        <a href="/experience/" class="crosslink"><i class="fas fa-briefcase"></i> Jobs &amp; roles</a>
-        <a href="/research-experience/" class="crosslink"><i class="fas fa-microscope"></i> Research</a>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Aug 2025 – May 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/ProjectEMBER/">Project EMBER</a></h3>
+                <p class="entry-context">Founder and team lead · Virginia Tech</p>
+                <p>
+                    Started Virginia Tech’s only student-led solar-thermal design team and led it to a working
+                    panel that converts roughly 60% of incident energy to useful heat. Built the materials
+                    simulator that let us skip a semester of physical testing, and a telemetry loop that
+                    adjusts flow rate on its own.
+                </p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Jun 2025 – Jul 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/research/llm-ocr/">Improving LLM-based OCR</a></h3>
+                <p class="entry-context">Research · paper accepted to ICTAI 2026</p>
+                <p>
+                    Built the pipeline that benchmarks Detectron2, MinerU, and LayoutParser on common ground.
+                    Most of their apparent disagreement turned out to be a granularity mismatch rather than
+                    accuracy; normalizing it cut benchmarking error by 40%.
+                </p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Dec 2025 – Jun 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/experience/#finnimo">Finnimo</a></h3>
+                <p class="entry-context">Software engineer intern · fintech startup</p>
+                <p>
+                    Rebuilt a mobile-only financial planning app as a web product in Next.js, TypeScript, and
+                    Supabase, with Plaid account linking and an MCP server that gives an AI agent scoped access
+                    to a user’s plan.
+                </p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Jan – May 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/experience/#smart">SMART</a></h3>
+                <p class="entry-context">AR software engineer · smart-home startup</p>
+                <p>
+                    Designed the Apple Vision Pro interface for controlling a home. Device activation went from
+                    about 30 seconds to 10, and an AR automation builder cut time-to-automation by 30% while
+                    letting people express more complex rules.
+                </p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Fall 2024</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/projects/#coursework">Systems programming in C</a></h3>
+                <p class="entry-context">Coursework · Virginia Tech</p>
+                <p>
+                    A shell, a threadpool, a memory allocator, and a Linux web server, written to understand the
+                    three things that break at scale: processes, concurrency, and networking.
+                </p>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="section" id="elsewhere">
+    <div class="section-head">
+        <h2>Off the clock</h2>
+    </div>
+    <div class="body-text" style="margin-top:0">
+        <p>
+            Before any of this I refereed paintball and repaired markers at HogBack for most of a year, ran a
+            small furniture-restoration business online through high school, and won the Virginia SkillsUSA
+            programming championship, placing fourth nationally. I have done six hackathons, spoken at the
+            Sines Institute’s Uncommon Table series, and I still tutor high schoolers in math and writing.
+            I run a lot.
+        </p>
     </div>
 </section>
 
-<!-- CTA -->
-<section>
-    <div class="cta-band">
-        <h2>Let's Build Something</h2>
-        <p>Always up for talking about solar tech, agentic AI, or whatever weird hackathon idea comes next.</p>
-        <div class="cta-buttons">
-            <a href="mailto:skogofficial@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
-            <a href="/projects/" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Browse All Projects</a>
-        </div>
+<section class="section" id="contact">
+    <div class="section-head">
+        <h2>Get in touch</h2>
     </div>
+    <p class="contact">
+        The fastest way to reach me is email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+        I am also on <a href="{{ site.github }}">GitHub</a> and <a href="{{ site.linkedin }}">LinkedIn</a>.
+    </p>
 </section>

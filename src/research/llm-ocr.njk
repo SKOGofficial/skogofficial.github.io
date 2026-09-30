@@ -1,0 +1,69 @@
+---
+layout: page.njk
+title: Improving LLM-based OCR
+permalink: /research/llm-ocr/
+kicker: "Research · Virginia Tech · Jun 2025 – Jul 2026 · ICTAI 2026"
+lede: "How do you choose the right layout model to feed a language model, when the layout models cannot be compared to each other in the first place?"
+description: "Soham Nawthale's research on LLM-based OCR and layout analysis at Virginia Tech, co-authoring a paper accepted to ICTAI 2026."
+back:
+  href: /research/
+  label: All research
+---
+
+<div class="summary">
+    <p>
+        Co-author on <em>Improving LLM-Based OCR Through Document Segmentation and Semantic Prompting</em>,
+        accepted to ICTAI 2026. I built the benchmarking pipeline for the layout-detection stage and found that
+        much of the models’ apparent disagreement was a measurement artifact. Normalizing it cut benchmarking
+        error by 40%.
+    </p>
+</div>
+
+<h2>The problem</h2>
+<p>
+    Classic OCR reads a page as a flat string and ignores structure. Once a language model is doing the
+    reading, structure matters again: a model that does not know it is looking at a table will misread it.
+    The pipeline we tested was two-stage. A layout model segments the page and extracts text, and that goes
+    into a vision-language model as context, on the hypothesis that the VLM returns something cleaner and
+    better structured than either stage alone.
+</p>
+<p>
+    My job was the first stage: deciding which layout model to trust. The honest answer going in was that we
+    could not tell, because Detectron2, MinerU, and LayoutParser were not comparable to each other.
+</p>
+
+<h2>What I found</h2>
+<p>
+    The models segment a page at different granularities. One returns a paragraph as a single region; another
+    returns each of its lines. Score them naively against ground truth and you penalize a model for being more
+    detailed rather than for being wrong. That is a measurement artifact, not a performance difference, and it
+    was dominating the rankings.
+</p>
+<p>
+    The literature had several partial answers and no complete one, so I combined them into a bounding-box
+    simplification step that brings every model’s output down to a common granularity before anything is
+    scored, then re-ran the whole benchmark. Benchmarking error dropped 40%, and the rankings started reflecting
+    accuracy instead of segmentation style. That is what finally let us pick the front end of the pipeline on
+    evidence.
+</p>
+
+<h2>What the paper says</h2>
+<ul>
+    <li>MinerU wins layout IoU decisively, at 0.9654 on PRImA and 0.9994 on DocLayNet, but is roughly a hundred times slower per page than Detectron2 or LayoutParser.</li>
+    <li>On prompting, all four strategies land within a couple of points on average character error rate. The separation is in the outliers, where rule-based prompting is the stable choice. The averages hid the difference; the tails showed it.</li>
+</ul>
+
+<h2>My part</h2>
+<p>
+    Built the benchmarking pipeline and the granularity normalization, ran the layout comparisons, and
+    co-authored the paper alongside other undergraduate researchers and a faculty advisor. This is the anchor
+    of the research side of what I do, and the piece I would point to for the claim that I have evaluated models
+    at the pipeline level rather than only through an API.
+</p>
+
+<dl class="facts">
+    <dt>Role</dt><dd>Undergraduate researcher and co-author</dd>
+    <dt>Dates</dt><dd>June 2025 – July 2026</dd>
+    <dt>Venue</dt><dd>ICTAI 2026 (accepted)</dd>
+    <dt>Stack</dt><dd>Python, PyTorch, TensorFlow, Detectron2, MinerU, LayoutParser</dd>
+</dl>

@@ -1,0 +1,114 @@
+[
+  {
+    "group": "personal",
+    "title": "One-Shot Takeoff",
+    "when": "2026",
+    "status": "In progress",
+    "context": "Computer vision for construction drawings",
+    "summary": "Draw a box around one symbol on a construction drawing and find every other instance of it. Doors, detail markers, elevation markers, and receptacles, taken off a rasterized sheet rather than its vector geometry. FFT cross-correlation is implemented end to end; five other strategies are designed to plug in behind the same function.",
+    "stack": "TypeScript, Python, NumPy",
+    "link": "https://github.com/SKOGofficial/rock-grid-proj",
+    "linkLabel": "Source"
+  },
+  {
+    "group": "personal",
+    "title": "Job Board Tracker",
+    "when": "2026",
+    "status": "In progress",
+    "context": "Local-first job search tooling",
+    "summary": "Tracks applications across job boards and company portals in a local SQLite database. Run as a service on a home server, it watches the inbox, files acknowledgements and interview requests under the right application, and turns job-alert emails into a to-apply list with a tailored resume already drafted.",
+    "stack": "Python, NiceGUI, SQLite",
+    "link": "https://github.com/SKOGofficial/job_builder",
+    "linkLabel": "Source"
+  },
+  {
+    "group": "personal",
+    "title": "SignLink",
+    "when": "2024 –",
+    "context": "Wearable sign-language translator",
+    "summary": "The recognition side started at HooHacks 2024: MediaPipe hand landmarks matched against reference signs with dynamic time warping. The wearable version, with the model running on embedded hardware, is the long tail.",
+    "stack": "Python, MediaPipe, embedded systems",
+    "link": "https://github.com/SKOGofficial/HOOHACKS_2024",
+    "linkLabel": "Source"
+  },
+  {
+    "group": "personal",
+    "title": "MNIST from the ground up",
+    "when": "Dec 2022 – Jan 2023",
+    "context": "First machine learning project",
+    "summary": "Handwritten digit recognition on MNIST, the first machine learning thing I ever built, in both PyTorch and TensorFlow.",
+    "stack": "Python, PyTorch, TensorFlow"
+  },
+
+  {
+    "group": "hackathon",
+    "title": "Water 4 Chad",
+    "when": "HooHacks 2025",
+    "summary": "An AR simulation of a river in Chad where engineers place water-cleaning dams and watch the effect on the flow, set up in the real environment through a headset.",
+    "stack": "Unity, Meta SDK, C#"
+  },
+  {
+    "group": "hackathon",
+    "title": "Hokie Feast",
+    "when": "HackViolet 2024",
+    "summary": "Generates recipes from whatever is actually in a college student's fridge.",
+    "stack": "React, JavaScript, recipe API",
+    "link": "https://github.com/SKOGofficial/Hackviolet",
+    "linkLabel": "Source"
+  },
+  {
+    "group": "hackathon",
+    "title": "Safewalk",
+    "when": "PatriotHacks 2024",
+    "summary": "A crime-report database for each Northern Virginia Community College campus, so students can pick class times with the fewest expected incidents, with AI-written safety recommendations.",
+    "stack": "Python, web scraping, data visualization"
+  },
+  {
+    "group": "hackathon",
+    "title": "Street Fighter",
+    "when": "VTHacks 2023",
+    "summary": "A fitness game that lets you box against an AI opponent. MediaPipe tracks your body and scores your form in real time.",
+    "stack": "Python, MediaPipe, computer vision",
+    "link": "https://github.com/SKOGofficial/VTHacks",
+    "linkLabel": "Source"
+  },
+  {
+    "group": "hackathon",
+    "title": "Musical Stocks",
+    "when": "HackViolet 2023",
+    "summary": "Turns live market data into music so a day trader can hear the market instead of watching it.",
+    "stack": "Python, data sonification"
+  },
+  {
+    "group": "hackathon",
+    "title": "ROI Bot",
+    "when": "HooHacks 2023",
+    "summary": "A real-estate investment guide that forecasts a property's value over time.",
+    "stack": "Python, web scraping, financial modeling"
+  },
+
+  {
+    "group": "coursework",
+    "title": "Systems programming in C",
+    "when": "Fall 2024",
+    "context": "Computer Systems, Virginia Tech",
+    "summary": "Four builds that cover the three things that break at scale: a custom shell with process control and I/O redirection, a threadpool with worker scheduling and synchronization, a custom memory allocator, and an HTTP server with MP4 streaming, cookies, and a token-authenticated API.",
+    "stack": "C, Linux, POSIX threads, sockets"
+  },
+  {
+    "group": "coursework",
+    "title": "Mixed reality builds",
+    "when": "Spring 2025",
+    "context": "Mixed Reality, Virginia Tech",
+    "summary": "Four Unity projects for a mixed reality course: a VR night island with locomotion, a VR escape room built around interaction techniques, and room-scale AR basketball and golf with physics grounded in the real room.",
+    "stack": "Unity, Meta SDK, C#"
+  },
+  {
+    "group": "coursework",
+    "title": "MoodMuse",
+    "when": "Spring 2025",
+    "context": "Apple Software Design, Virginia Tech",
+    "summary": "A multimodal journaling app that reads the mood of an entry and builds a Spotify playlist to match.",
+    "stack": "Swift, Spotify API"
+  }
+]
