@@ -1,168 +1,190 @@
 ---
 layout: base.njk
 title: Experience
-css_file: experience.css
-nav_icon: briefcase
+permalink: /experience/
+description: "Soham Nawthale's work history and education: software engineer intern at Finnimo, AR software engineer at SMART, founder of Project EMBER, and a B.S. in Computer Science from Virginia Tech."
 ---
 
-<div class="hero hero-compact">
-    <div class="section-head no-margin">
-        <span class="eyebrow">Where I've worked</span>
-        <h1 class="hero-title small">Experience</h1>
-        <p class="hero-description centered">
-            Positions I've held — jobs I was hired into, ventures I ran myself, and teams I've led.
-            The things I built on my own time are under <a href="/projects/">Projects</a>, and the
-            labs I've been part of are under <a href="/research-experience/">Research</a>.
-        </p>
-    </div>
-</div>
+<header class="page-header">
+    <h1>Experience</h1>
+    <p class="lede">
+        Roles I was hired into, work I ran myself, teams I led, and the degree underneath it. Things I built
+        on my own time are under <a href="/projects/">Projects</a>; lab work is under
+        <a href="/research/">Research</a>.
+    </p>
+</header>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Hired positions</span>
+<section class="section" id="employment" style="margin-top:0">
+    <div class="section-head">
         <h2>Employment</h2>
-        <p>Roles where I worked for someone else's organization.</p>
     </div>
-    <div class="role-list">
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">Finnimo</span>
-                <span class="role-dates">Dec 2025 – Jun 2026</span>
-                <span class="role-kind">Internship</span>
+    <ol class="entries">
+        <li class="entry" id="finnimo">
+            <div class="entry-meta"><span>Dec 2025 – Jun 2026</span><span>Remote</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Finnimo</h3>
+                <p class="entry-context">Software Engineer Intern</p>
+                <p>
+                    Finnimo’s personal-finance product existed as a mobile app and a pitch. I rebuilt it as a web
+                    application and added the agentic layer on top, then it went into investor pitches.
+                </p>
+                <ul>
+                    <li>Owned onboarding, authentication, and the dashboard flows in Next.js, TypeScript, and Supabase.</li>
+                    <li>Linked real bank and investment accounts through Plaid, which forced discipline about what an AI agent may do without a human in the loop.</li>
+                    <li>Built an internal MCP server connecting the model to planning and investing features, with guardrails on what it could act on, and a retrieval layer so advice reflected the user’s actual finances.</li>
+                </ul>
+                <p class="entry-stack">Next.js, TypeScript, Supabase, Plaid, OpenAI API, MCP</p>
             </div>
-            <div class="role-body">
-                <div class="role-title">Software Engineer Intern</div>
-                <p>Worked on a full-stack financial planning app — onboarding, dashboards, and account
-                   aggregation — plus a RAG-backed advice layer and an internal MCP server powering the
-                   product's agentic features.</p>
-                <div class="tag-row">
-                    <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">OpenAI</span>
-                </div>
+        </li>
+        <li class="entry" id="smart">
+            <div class="entry-meta"><span>Jan – May 2026</span><span>Blacksburg, VA</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">SMART</h3>
+                <p class="entry-context">AR Software Engineer</p>
+                <p>
+                    An IoT startup controlling smart-home devices through the Apple Vision Pro. The bar I set for
+                    the interface was that it had to beat walking to the switch.
+                </p>
+                <ul>
+                    <li>Rebuilt device control around spatial selection instead of menu traversal. Activation fell from about 30 seconds to 10.</li>
+                    <li>Built an AR automation builder that cut time-to-automation by 30% while letting people express more complex rules, not fewer.</li>
+                    <li>Integrated devices through Home Assistant on a Raspberry Pi and worked through more than ten navigation and interface flaws in the app.</li>
+                </ul>
+                <p class="entry-stack">Apple Vision Pro, Unity, Home Assistant, Raspberry Pi</p>
             </div>
-        </div>
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">SMART</span>
-                <span class="role-dates">Jan – May 2026</span>
-                <span class="role-kind">Engineering role</span>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Mar 2023 – Jan 2024</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">HogBack Paintball</h3>
+                <p class="entry-context">Referee and Gun Technician</p>
+                <p>
+                    Ran live games on the field, keeping groups of players safe and moving, and diagnosed and
+                    repaired markers on the bench between rounds. Still the job where I learned the most about
+                    talking to people who are mad at you.
+                </p>
             </div>
-            <div class="role-body">
-                <div class="role-title">AR Software Engineer</div>
-                <p>Built an Apple Vision Pro interface for smart-home control, cutting device activation
-                   from roughly 30 seconds to 10, and an AR automation builder that sped up setup by 30%.</p>
-                <div class="tag-row">
-                    <span class="tag">Vision Pro</span><span class="tag">Unity</span><span class="tag">IoT</span>
-                </div>
-            </div>
-        </div>
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">HogBack Paintball</span>
-                <span class="role-dates">Mar 2023 – Jan 2024</span>
-                <span class="role-kind">Part-time</span>
-            </div>
-            <div class="role-body">
-                <div class="role-title">Paintball Referee &amp; Gun Technician</div>
-                <p>Reffed live games on the field — running matches, enforcing safety rules, and keeping
-                   groups of players moving — and serviced markers on the bench, diagnosing and repairing
-                   equipment between rounds.</p>
-                <div class="tag-row">
-                    <span class="tag">Equipment Repair</span><span class="tag">Customer Service</span><span class="tag">Safety &amp; Officiating</span>
-                </div>
-            </div>
-        </div>
-    </div>
+        </li>
+    </ol>
 </section>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Self-employed</span>
-        <h2>My Own Ventures</h2>
-        <p>Work I sourced, priced, and ran end to end.</p>
+<section class="section" id="independent">
+    <div class="section-head">
+        <h2>Independent work</h2>
     </div>
-    <div class="role-list">
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">Private Tutoring</span>
-                <span class="role-dates">Jun 2024 – Present</span>
-                <span class="role-kind">Self-employed</span>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Jun 2024 – present</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Private tutoring</h3>
+                <p class="entry-context">Math, writing, and computer science for high schoolers</p>
+                <p>I find the students, set a curriculum per student, and track progress across the term.</p>
             </div>
-            <div class="role-body">
-                <div class="role-title">Founder &amp; Tutor</div>
-                <p>Tutor high school students in STEM and English — finding my own students, setting
-                   curriculum per student, and tracking progress across the term.</p>
-                <div class="tag-row">
-                    <span class="tag">Teaching</span><span class="tag">Math</span><span class="tag">Writing</span><span class="tag">Computer Science</span>
-                </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>2020 – 2022</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Furniture restoration and resale</h3>
+                <p class="entry-context">My first business</p>
+                <p>
+                    Bought, restored, photographed, and sold furniture online through high school. Listings,
+                    pricing, and logistics were all mine, which is how I learned what my time costs.
+                </p>
             </div>
-        </div>
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">Online Furniture Sales</span>
-                <span class="role-dates">2020 – 2022</span>
-                <span class="role-kind">Self-employed</span>
-            </div>
-            <div class="role-body">
-                <div class="role-title">Owner &amp; Operator</div>
-                <p>Bought, restored, photographed, and resold furniture online through high school —
-                   handling the listings, the pricing, and the logistics myself.</p>
-                <div class="tag-row">
-                    <span class="tag">Sales</span><span class="tag">Marketing</span><span class="tag">Photography</span>
-                </div>
-            </div>
-        </div>
-    </div>
+        </li>
+    </ol>
 </section>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Teams I've run</span>
+<section class="section" id="leadership">
+    <div class="section-head">
         <h2>Leadership</h2>
-        <p>Organizations I founded or helped lead.</p>
     </div>
-    <div class="role-list">
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">Project EMBER</span>
-                <span class="role-dates">Aug 2025 – May 2026</span>
-                <span class="role-kind">Founder</span>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Aug 2025 – May 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/ProjectEMBER/">Project EMBER</a></h3>
+                <p class="entry-context">Founder and Team Lead · Virginia Tech</p>
+                <p>
+                    Founded the only student-led solar-thermal energy design team on campus and led an
+                    interdisciplinary team from a blank page to a working prototype in one academic year.
+                    Recruiting, technical direction, and a good share of the code.
+                </p>
             </div>
-            <div class="role-body">
-                <div class="role-title">Founder &amp; Team Lead</div>
-                <p>Founded and lead the only student-run solar-thermal energy design team at Virginia
-                   Tech — recruiting the team, setting the technical direction, and shipping a prototype
-                   that converts roughly 60% of incident energy into useful heat, alongside a materials
-                   simulator and an autonomous telemetry feedback loop.
-                   <a href="/ProjectEMBER/">Read the full write-up →</a></p>
-                <div class="tag-row">
-                    <span class="tag">Python</span><span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">Team Leadership</span>
-                </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>2023 – 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Student organizations</h3>
+                <p class="entry-context">Northern Virginia Community College, then Virginia Tech</p>
+                <p>
+                    SGA Senator, Desi Club President, Society of Physics Students Secretary, and Coding Club
+                    Treasurer at NOVA. HY Marketing Chair and Swim Club member at Virginia Tech.
+                </p>
             </div>
-        </div>
-        <div class="role">
-            <div class="role-side">
-                <span class="role-org">NOVA &amp; Virginia Tech</span>
-                <span class="role-dates">2023 – Present</span>
-                <span class="role-kind">Student government &amp; clubs</span>
-            </div>
-            <div class="role-body">
-                <div class="role-title">SGA Senator, Desi Club President, and more</div>
-                <p>SGA Senator, Desi Club President, SPS Secretary, and Coding Club Treasurer at NOVA;
-                   HY Marketing Chair at Virginia Tech.
-                   <a href="/acedemic/">The full list is on the education page →</a></p>
-            </div>
-        </div>
-    </div>
+        </li>
+    </ol>
 </section>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Not what you were looking for?</span>
-        <h2>Elsewhere on the Site</h2>
+<section class="section" id="education">
+    <div class="section-head">
+        <h2>Education</h2>
     </div>
-    <div class="crosslink-row">
-        <a href="/projects/" class="crosslink"><i class="fas fa-code"></i> Projects I built</a>
-        <a href="/research-experience/" class="crosslink"><i class="fas fa-microscope"></i> Research I've been part of</a>
-        <a href="/acedemic/" class="crosslink"><i class="fas fa-graduation-cap"></i> Education &amp; honors</a>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>2024 – May 2026</span><span>Blacksburg, VA</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Virginia Tech</h3>
+                <p class="entry-context">B.S. Computer Science, Minor in Mathematics · Phi Beta Kappa</p>
+                <p>
+                    Coursework I still lean on: Algorithm Design, Machine Learning, Computer Systems, Mixed
+                    Reality, and Introduction to Quantum Computing. Three research groups and one design team
+                    came out of these two years.
+                </p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Before transferring</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Northern Virginia Community College</h3>
+                <p class="entry-context">Dean’s List · Presidential Award</p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Fairfax, VA</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">W.T. Woodson High School</h3>
+                <p class="entry-context">Honors graduate</p>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="section" id="honors">
+    <div class="section-head">
+        <h2>Honors</h2>
     </div>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Virginia Tech</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Phi Beta Kappa</h3>
+                <p class="entry-context">Also Dean’s List at Virginia Tech and NOVA, and the NOVA Presidential Award</p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>2023</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Virginia state champion, SkillsUSA Programming</h3>
+                <p class="entry-context">Fourth place nationally</p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Invited talk</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title">Speaker, Sines Institute “Uncommon Table”</h3>
+                <p class="entry-context">Speaker series</p>
+            </div>
+        </li>
+    </ol>
 </section>

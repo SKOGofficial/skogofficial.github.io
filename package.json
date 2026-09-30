@@ -1,15 +1,13 @@
 {
   "name": "skogofficial.github.io",
-  "version": "1.0.0",
-  "description": "personal website",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Personal site for Soham Nawthale",
+  "private": true,
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "eleventy --serve"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Soham Nawthale <skogofficial@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"

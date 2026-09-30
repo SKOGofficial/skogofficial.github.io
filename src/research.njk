@@ -1,0 +1,96 @@
+---
+layout: base.njk
+title: Research
+permalink: /research/
+description: "Soham Nawthale's research at Virginia Tech: LLM-based OCR and layout analysis (ICTAI 2026), explainability for vision-language models, information retrieval, and quantum computing education in VR."
+---
+
+<header class="page-header">
+    <h1>Research</h1>
+    <p class="lede">
+        Three labs at Virginia Tech, all loosely about teaching machines to read and then checking whether
+        they actually did. These are team efforts, so my part in each is spelled out.
+    </p>
+</header>
+
+<section class="section" id="current" style="margin-top:0">
+    <div class="section-head">
+        <h2>Current</h2>
+    </div>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>2026 – present</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/research/xai/">Explainability for vision-language OCR</a></h3>
+                <p class="entry-context">Undergraduate researcher · Virginia Tech</p>
+                <p>
+                    Instead of scoring a document model’s final answer, I am tracing how its reading of a page
+                    changes from preprocessing through the vision tower and into the language model, and where
+                    it starts to diverge from the ground truth. Heatmap attribution and the mechanistic
+                    interpretability literature, applied to OCR.
+                </p>
+                <p class="entry-stack">Python, PyTorch, interpretability tooling</p>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="section" id="published">
+    <div class="section-head">
+        <h2>Published</h2>
+    </div>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Jun 2025 – Jul 2026</span><span>ICTAI 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/research/llm-ocr/">Improving LLM-Based OCR Through Document Segmentation and Semantic Prompting</a></h3>
+                <p class="entry-context">Co-author · accepted to ICTAI 2026</p>
+                <p>
+                    A two-stage pipeline: a layout model segments the page, and a vision-language model reads it
+                    with that structure as context. I owned the first stage, building the benchmark that puts
+                    Detectron2, MinerU, and LayoutParser on common ground. The models segment pages at
+                    different granularities, so naive scoring punished detail rather than error; normalizing
+                    the bounding boxes cut benchmarking error by 40%.
+                </p>
+                <p class="entry-stack">Python, PyTorch, TensorFlow, Detectron2, MinerU, LayoutParser</p>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="section" id="past">
+    <div class="section-head">
+        <h2>Earlier</h2>
+    </div>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Jun 2024 – May 2025</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/research/information-retrieval/">Information retrieval over theses and dissertations</a></h3>
+                <p class="entry-context">Undergraduate research assistant · Dr. Edward Fox’s group, led by Satvik Checkuri</p>
+                <p>
+                    The lab that got me into research. I kept the Linux VMs the experiments ran on working,
+                    wrote the Python automation that cut a manual document-filtering step from about two months
+                    to two weeks, and labeled several hundred abstracts by section.
+                    <a href="/research/information-retrieval/">The long version</a> is the closest thing on
+                    this site to an origin story.
+                </p>
+                <p class="entry-stack">Python, Linux, Docker, PostgreSQL, OCR</p>
+            </div>
+        </li>
+        <li class="entry">
+            <div class="entry-meta"><span>Wound down early</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/research/qmist/">Quantum computing education in VR</a></h3>
+                <p class="entry-context">VR developer · collaboration with two Virginia Tech faculty</p>
+                <p>
+                    A sandbox for teaching superposition and entanglement by letting students drag qubits through
+                    gates and compose circuits themselves. I built the VR side. The project ended early and that
+                    portion was cut, so what shipped was a rough desktop version from the other half of the team.
+                    It stays here because the question was real.
+                </p>
+                <p class="entry-stack">Unity, C#, VR</p>
+            </div>
+        </li>
+    </ol>
+</section>

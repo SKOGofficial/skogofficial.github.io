@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<article class="prose">
+    <header class="page-header">
+        {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+        <h1>{{ title }}</h1>
+        {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+    </header>
+
+    {{ content | safe }}
+
+    {% if back %}<a class="back" href="{{ back.href }}">&larr; {{ back.label }}</a>{% endif %}
+</article>

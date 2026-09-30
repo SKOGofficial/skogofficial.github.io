@@ -1,50 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ title }} - Soham Nawthale</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="stylesheet" href="/css/{{ css_file | default('projects.css') }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>{% if title %}{{ title }} · {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="author" content="{{ site.name }}">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{% if title %}{{ title }} · {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="/assets/images/clock-logo.svg" alt="Soham Nawthale" class="nav-logo-image"/>
-                <span>Soham Nawthale</span>
-            </div>
-            <ul class="nav-menu" id="primary-navigation">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/acedemic/" class="nav-link">Education</a></li>
-                <li><a href="/projects/" class="nav-link">Projects</a></li>
-                <li><a href="/research-experience/" class="nav-link">Research</a></li>
-                <li><a href="/experience/" class="nav-link">Experience</a></li>
-                <li><a href="/ProjectEMBER/" class="nav-link">Project Ember</a></li>
-            </ul>
-            <div class="hamburger" role="button" aria-controls="primary-navigation" aria-expanded="false" tabindex="0">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-    
-    <main>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header wrap">
+        <a class="brand" href="/">{{ site.name }}</a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="/projects/"{% if page.url.startsWith('/projects/') %} aria-current="page"{% endif %}>Projects</a>
+            <a href="/research/"{% if page.url.startsWith('/research/') %} aria-current="page"{% endif %}>Research</a>
+            <a href="/experience/"{% if page.url.startsWith('/experience/') %} aria-current="page"{% endif %}>Experience</a>
+        </nav>
+    </header>
+
+    <main id="main" class="wrap">
         {{ content | safe }}
     </main>
-    
-    <footer>
-        <div class="footer-links">
-            <a href="mailto:skogofficial@gmail.com" aria-label="Email Soham"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/SKOGofficial" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/sohamnawthale" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-        &copy; 2026 Soham Nawthale
-    </footer>
 
-    <script src="/js/main.js"></script>
+    <footer class="site-footer wrap">
+        <div class="footer-row">
+            <span>&copy; {{ year }} {{ site.name }}</span>
+            <nav aria-label="Contact">
+                <a href="mailto:{{ site.email }}">Email</a>
+                <a href="{{ site.github }}" rel="me noopener">GitHub</a>
+                <a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a>
+            </nav>
+        </div>
+        <p class="colophon">Built with Eleventy, hosted on GitHub Pages, set in Newsreader and Inter. No analytics, no cookies. <a href="{{ site.repo }}">Source</a>.</p>
+    </footer>
 </body>
-</html> 
+</html>

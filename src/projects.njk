@@ -1,94 +1,66 @@
 ---
 layout: base.njk
 title: Projects
-css_file: projects.css
-nav_icon: code
+permalink: /projects/
+description: "Things Soham Nawthale built: personal projects, hackathon entries, and coursework in C, Unity, and Swift."
 ---
 
-<div class="hero hero-compact">
-    <div class="section-head no-margin">
-        <span class="eyebrow">Portfolio</span>
-        <h1 class="hero-title small">Projects</h1>
-        <p class="hero-description centered">
-            Things I built — hackathon weekends, coursework, and side projects that started as an
-            itch. Jobs and roles I've held are on the <a href="/experience/">Experience</a> page, and
-            the labs I've been part of are under <a href="/research-experience/">Research</a>.
-        </p>
-    </div>
-</div>
+<header class="page-header">
+    <h1>Projects</h1>
+    <p class="lede">
+        Things I built because a hackathon, a class, or an itch demanded it. Jobs are under
+        <a href="/experience/">Experience</a> and lab work under <a href="/research/">Research</a>.
+    </p>
+</header>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Weekend builds</span>
-        <h2>Hackathon Projects</h2>
-        <p>48 hours, a team of four, and whatever idea survived the first coffee.</p>
+<section class="section" id="founded" style="margin-top:0">
+    <div class="section-head">
+        <h2>Founded</h2>
     </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/street-fighter-(vthacks-2023)/">Street Fighter (VTHacks 2023)</a></span><br>
-        <small>Created a health and fitness video game with a team of 4 people that allows users to practice real boxing against AI bot.</small><br>
-        <small>Skills: Game Design, Computer Vision, Python Backend and GUI, Media Pipe</small>
-    </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/musical-stocks-(hack-violet-2023)/">Musical Stocks (Hack Violet 2023)</a></span><br>
-        <small>Created an audio experience with a team of 4 people for day traders to understand the market through music.</small><br>
-        <small>Skills: Data Visualization, Music Theory, Artificial Intelligence, Python</small>
-    </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/safewalk-(patriot-hacks-2024)/">Safewalk (Patriot Hacks 2024)</a></span><br>
-        <small>Created a crime-report data base for each of the NOVA campus with a team of 4 people so users can pick classes at times with least expected crimes with AI recommendations on staying safe.</small><br>
-        <small>Skills: Web Scraping, Data Visualization, Artificial Intelligence Integration.</small>
-    </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/roi-bot-(hoo-hacks-2023)/">ROI bot (hoo hacks 2023)</a></span><br>
-        <small>Created a real-estate Investment Guide with a team of 4 people, to allow Real Estate Investors to see a forecast of the property value over time.</small><br>
-        <small>Skills: Web Scraping, Financial Modeling</small>
-    </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/hokie-feast-(hackviolet-2024)/">Hokie Feast (Hackviolet 2024)</a></span><br>
-        <small>Created a Website that generates recipes for college students based on the ingredients in their fridge.</small><br>
-        <small>Skills: React, JS, HTML, API integration</small>
-    </div>
-    <div class="project">
-        <span class="project-title"><a href="/projects/water-4-chad-(hoohacks-2025)/">Water 4 Chad (Hoohacks 2025)</a></span><br>
-        <small>An AR simulation of a river in Chad where engineers can place water cleaning dams to visualize projects in the future. The workplace can be set up in the real work enviornment through AR. </small><br>
-        <small>Skills: AR, Unity, Meta-SDK, C#, API integration</small>
-    </div>
+    <ol class="entries">
+        <li class="entry">
+            <div class="entry-meta"><span>Aug 2025 – May 2026</span></div>
+            <div class="entry-body">
+                <h3 class="entry-title"><a href="/ProjectEMBER/">Project EMBER</a></h3>
+                <p class="entry-context">Student-led solar-thermal design team · Virginia Tech</p>
+                <p>
+                    A solar thermal panel that converts roughly 60% of incident energy into useful heat, plus the
+                    software around it: a materials simulator, on-device telemetry, and a feedback loop that
+                    adjusts flow rate without a human watching. Founded and led it for one academic year.
+                </p>
+                <p class="entry-stack">Python, Arduino, C++</p>
+            </div>
+        </li>
+    </ol>
 </section>
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Coursework</span>
-        <h2>Course Projects</h2>
-        <p>Built for a class — systems programming in C, and a run of mixed-reality builds in Unity.</p>
-    </div>
-    <div class="experience"><span class="project-title"><a href="/projects/personal-server-(systems-fall-2024)/">Personal Server (Systems Fall 2024)</a></span><br><small>Web server with MP4 streaming, cookies, token-based API<br>Skills: System Architecture, Networking, C</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/threadpool-(systems-fall-2024)/">Threadpool (Systems Fall 2024)</a></span><br><small>Multithreaded load processing system<br>Skills: Multithreading, Systems Architecture, C</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/memory-allocator-(systems-fall-2024)/">Memory Allocator (Systems Fall 2024)</a></span><br><small>Custom malloc implementation<br>Skills: C</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/night-island-(mixed-reality-2025)/">Night-Island (Mixed Reality 2025)</a></span><br><small>VR night scene experience with locomotion<br>Skills: Meta-SDK, Unity, C#</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/escape-room-(mixed-reality-2025)/">Escape-Room (Mixed Reality 2025)</a></span><br><small>VR escape game using interaction techniques<br>Skills: Game Design, Meta-SDK, Unity, C#</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/ar-basketball-(mixed-reality-2025)/">AR-Basketball (Mixed Reality 2025)</a></span><br><small>AR basketball game in room-scale environments<br>Skills: Meta-SDK, Unity, C#</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/ar-golf-(mixed-reality-2025)/">AR-Golf (Mixed Reality 2025)</a></span><br><small>AR golf game with room-based physics<br>Skills: Meta-SDK, Unity, C#</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/moodmuse-(apple-sd-2025)/">MoodMuse (Apple SD 2025)</a></span><br><small>Multimodal journaling app with Spotify playlist generator<br>Skills: Spotify API, Swift, Data Visualization</small></div>
-</section>
+{% set groups = [
+    { "key": "personal",   "title": "Personal" },
+    { "key": "hackathon",  "title": "Hackathons", "note": "Forty-eight hours, a team of four, and whatever idea survived the first coffee." },
+    { "key": "coursework", "title": "Coursework" }
+] %}
 
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">On the side</span>
-        <h2>Personal Projects</h2>
-        <p>Nobody asked for these. I built them anyway.</p>
+{% for group in groups %}
+<section class="section" id="{{ group.key }}">
+    <div class="section-head">
+        <h2>{{ group.title }}</h2>
+        {% if group.note %}<span class="meta">{{ group.note }}</span>{% endif %}
     </div>
-    <div class="experience"><span class="project-title"><a href="/projects/neural-network-(dec-2022-jan-2023)/">Neural Network (Dec 2022 - Jan 2023)</a></span><br><small>Digit recognition with MNIST<br>Skills: Machine Learning, Pytorch, TensorFlow, Python</small></div>
-    <div class="experience"><span class="project-title"><a href="/projects/signlink-(mar-2024-present)/">SignLink (Mar 2024 - Present)</a></span><br><small>Wearable sign-language translator<br>Skills: Embedded Systems, AI, Computer Vision</small></div>
+    <ol class="entries">
+        {% for p in projects | where("group", group.key) %}
+        <li class="entry">
+            <div class="entry-meta">
+                <span>{{ p.when }}</span>
+                {% if p.status %}<span>{{ p.status }}</span>{% endif %}
+            </div>
+            <div class="entry-body">
+                <h3 class="entry-title">{% if p.link %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+                {% if p.context %}<p class="entry-context">{{ p.context }}</p>{% endif %}
+                <p>{{ p.summary }}</p>
+                <p class="entry-stack">{{ p.stack }}{% if p.link %} · <a href="{{ p.link }}">{{ p.linkLabel or "Source" }}</a>{% endif %}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
 </section>
-
-<section>
-    <div class="section-head align-left">
-        <span class="eyebrow">Not what you were looking for?</span>
-        <h2>Elsewhere on the Site</h2>
-    </div>
-    <div class="crosslink-row">
-        <a href="/experience/" class="crosslink"><i class="fas fa-briefcase"></i> Jobs &amp; roles I've held</a>
-        <a href="/research-experience/" class="crosslink"><i class="fas fa-microscope"></i> Research I've been part of</a>
-        <a href="/ProjectEMBER/" class="crosslink"><i class="fas fa-solar-panel"></i> Project EMBER (team I founded)</a>
-    </div>
-</section>
+{% endfor %}

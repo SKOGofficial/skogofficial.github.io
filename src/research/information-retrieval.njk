@@ -1,0 +1,82 @@
+---
+layout: page.njk
+title: Information retrieval over theses and dissertations
+permalink: /research/information-retrieval/
+kicker: "Research · Virginia Tech · Jun 2024 – May 2025"
+lede: "The lab that got me into research, and the boring step everyone had accepted as a fixed cost."
+description: "How Soham Nawthale got into research: an undergraduate assistant role on Dr. Edward Fox's information retrieval capstone at Virginia Tech."
+back:
+  href: /research/
+  label: All research
+---
+
+<div class="summary">
+    <p>
+        Undergraduate research assistant on a capstone team led by PhD student Satvik Checkuri under Dr. Edward
+        Fox, working on information retrieval over a database of Electronic Theses and Dissertations. I kept the
+        Linux VMs running, wrote the Python automation that cut a manual filtering step from about two months to
+        two weeks, and labeled several hundred abstracts by section. It was the team’s project rather than mine;
+        I owned specific pieces of it.
+    </p>
+</div>
+
+<h2>How it started</h2>
+<p>
+    In the early months of summer 2024 I was emailing anyone at Virginia Tech who might take an undergraduate
+    for research. Out of a lot of emails I got one lead: pilot-testing a study that was about to launch. The
+    study was short, but it introduced me to Dr. Edward Fox, who later offered me a volunteer assistant role in
+    his research capstone.
+</p>
+
+<h2>The team</h2>
+<p>
+    The capstone was a small group of seniors who were serious about research, led by Satvik Checkuri, a PhD
+    student working on information retrieval over Electronic Theses and Dissertations, or ETDs. Fueled by
+    graduation and years of programming, they were on a different level from me. I was there to fill out a
+    resume. I left wanting to do this for a living.
+</p>
+
+<h2>Getting the tools running</h2>
+<p>
+    My first assignment was the Object Annotator, a tool for identifying sections within an ETD: get it running
+    locally, then on a remote VM. Debugging someone else’s codebase on an unfamiliar framework was painful, and
+    the README saved me. On the VM, the trick was picking a node whose environment already matched the repo’s
+    dependencies so I did not have to change much. It worked. The lesson I took early and have not dropped
+    since: documentation matters.
+</p>
+
+<h2>The filter</h2>
+<p>
+    Next was filtering ETDs into a usable training set. Satvik wanted to exclude papers that were too long or
+    off-format, and I spent two weeks sifting through more than eight thousand of them by hand to find two
+    hundred clean samples. That was enough to push me to automate it.
+</p>
+<p>
+    The script scanned local CSVs for file IDs, pulled the papers from the VM over SSH, ran OCR and regular
+    expressions over them to find required fields like department and references, and sorted each one into
+    acceptable, needs review, or unacceptable. Two weeks of manual work became about forty-five minutes, and the
+    lab’s processing timeline went from around two months to two weeks. Two days of coding for months of saved
+    labor.
+</p>
+
+<h2>The fall</h2>
+<p>
+    I stayed on into the fall semester for more debugging and VM setups. This time I failed to get a repository
+    running; the semester was heavy, I could not stay on it, and Satvik bailed me out. I also labeled several
+    hundred ETD abstracts by section: background, objective, method, result, conclusion.
+</p>
+
+<h2>What I took away</h2>
+<p>
+    I started to enjoy the chaos. I asked Satvik constantly about the PhD path, and he was honest about the
+    hours, the grind, and the uncertain payoff, and just as honest about the freedom, the depth, and the
+    satisfaction of solving hard problems. I do not know yet whether a PhD is my next step, but this is where I
+    started taking the question seriously.
+</p>
+
+<dl class="facts">
+    <dt>Role</dt><dd>Undergraduate research assistant</dd>
+    <dt>Dates</dt><dd>June 2024 – May 2025</dd>
+    <dt>Group</dt><dd>Dr. Edward Fox; team led by Satvik Checkuri</dd>
+    <dt>Stack</dt><dd>Python, Linux, Docker, PostgreSQL, OCR</dd>
+</dl>
